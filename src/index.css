@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Acalme Baby Premium Design System - Warm + Premium */
+
+@layer base {
+  :root {
+    /* Soft cream/off-white background */
+    --background: 40 33% 98%;
+    --foreground: 220 20% 20%;
+
+    /* Cards with subtle warmth */
+    --card: 40 40% 99%;
+    --card-foreground: 220 20% 20%;
+
+    --popover: 40 40% 99%;
+    --popover-foreground: 220 20% 20%;
+
+    /* Primary: Soft teal/aqua - trust & calm */
+    --primary: 190 60% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Warm beige */
+    --secondary: 35 30% 92%;
+    --secondary-foreground: 220 20% 20%;
+
+    /* Muted: Soft gray with warmth */
+    --muted: 30 20% 94%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Accent: Soft coral/peach for warmth */
+    --accent: 25 70% 92%;
+    --accent-foreground: 25 60% 35%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 190 60% 45%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens for the brand */
+    --warm: 35 40% 95%;
+    --warm-foreground: 30 30% 30%;
+    --sage: 140 20% 45%;
+    --sage-light: 140 25% 92%;
+    --trust: 200 60% 50%;
+    --trust-light: 200 50% 95%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 40 20% 95%;
+    --card: 220 20% 12%;
+    --card-foreground: 40 20% 95%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 190 60% 50%;
+    --primary-foreground: 220 20% 10%;
+    --secondary: 220 15% 20%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 40 10% 65%;
+    --accent: 25 50% 25%;
+    --accent-foreground: 25 40% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 190 60% 50%;
+    --warm: 30 20% 15%;
+    --warm-foreground: 35 30% 85%;
+    --sage: 140 20% 55%;
+    --sage-light: 140 15% 20%;
+    --trust: 200 50% 55%;
+    --trust-light: 200 30% 18%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .gradient-warm {
+    background: linear-gradient(135deg, hsl(var(--warm)) 0%, hsl(var(--background)) 100%);
+  }
+  
+  .gradient-trust {
+    background: linear-gradient(135deg, hsl(var(--trust-light)) 0%, hsl(var(--background)) 100%);
+  }
+}
