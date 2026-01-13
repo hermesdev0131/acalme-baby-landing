@@ -21,21 +21,37 @@ const TraditionalHeatingSection = () => {
           {/* Visual representation */}
           <div className="bg-card rounded-3xl p-8 lg:p-12 border border-border shadow-sm mb-12">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
-              {/* Diagram */}
+              {/* Diagram - AI Generated Limitation Visual */}
               <div className="relative">
-                <div className="aspect-video bg-muted/50 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                  {/* Baby silhouette representation */}
-                  <div className="relative">
-                    {/* Body outline */}
-                    <div className="w-32 h-40 bg-muted rounded-full relative">
-                      {/* Front heating only indicator */}
-                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-accent/50 rounded-full animate-pulse" />
-                      <Flame className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-accent" />
-                    </div>
-                    
-                    {/* Arrow showing limitation */}
-                    <div className="absolute -right-20 top-1/2 -translate-y-1/2 bg-muted-foreground/10 px-3 py-1.5 rounded-lg">
-                      <span className="text-xs text-muted-foreground">Apenas frente</span>
+                <div className="aspect-video bg-muted/50 rounded-2xl overflow-hidden relative">
+                  {/* AI Generated Limitation Visual */}
+                  <img
+                    src="/img/limitation-front-only.jpg"
+                    alt="Diagrama mostrando limitação do aquecimento apenas frontal"
+                    className="w-full h-full object-contain"
+                    onError={(e) => {
+                      // Fallback to icon diagram if AI image not available
+                      const target = e.currentTarget;
+                      target.style.display = 'none';
+                      const fallback = target.nextElementSibling as HTMLElement;
+                      if (fallback) fallback.style.display = 'flex';
+                    }}
+                  />
+                  {/* Fallback Icon Diagram */}
+                  <div className="absolute inset-0 hidden items-center justify-center">
+                    {/* Baby silhouette representation */}
+                    <div className="relative">
+                      {/* Body outline */}
+                      <div className="w-32 h-40 bg-muted rounded-full relative">
+                        {/* Front heating only indicator */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-accent/50 rounded-full animate-pulse" />
+                        <Flame className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-accent" />
+                      </div>
+                      
+                      {/* Arrow showing limitation */}
+                      <div className="absolute -right-20 top-1/2 -translate-y-1/2 bg-muted-foreground/10 px-3 py-1.5 rounded-lg">
+                        <span className="text-xs text-muted-foreground">Apenas frente</span>
+                      </div>
                     </div>
                   </div>
                 </div>

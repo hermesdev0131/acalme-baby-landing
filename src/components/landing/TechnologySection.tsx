@@ -59,36 +59,51 @@ const TechnologySection = () => {
           <div className="mb-16">
             <div className="bg-card rounded-3xl border border-border p-8 lg:p-12 shadow-lg">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
-                {/* Diagram Side */}
+                {/* Diagram Side - 360° Infographic */}
                 <div className="relative">
                   <div className="aspect-square max-w-md mx-auto relative">
-                    {/* Central circle - baby representation */}
-                    <div className="absolute inset-8 rounded-full border-4 border-dashed border-primary/30 flex items-center justify-center">
-                      <div className="w-3/4 h-3/4 rounded-full overflow-hidden border-4 border-primary/20 bg-muted/30 flex items-center justify-center">
-                        <div className="text-center p-4">
-                          <div className="w-16 h-16 mx-auto mb-2 bg-primary/20 rounded-full flex items-center justify-center">
-                            <Target className="w-8 h-8 text-primary" />
+                    {/* AI Generated 360° Heating Infographic */}
+                    <img
+                      src="/img/infographic-360-heating.jpg"
+                      alt="Infográfico mostrando aquecimento 360° - frente e costas"
+                      className="w-full h-full object-contain rounded-2xl"
+                      onError={(e) => {
+                        // Fallback to icon-based diagram if AI image not available
+                        const target = e.currentTarget;
+                        target.style.display = 'none';
+                        const fallback = target.nextElementSibling as HTMLElement;
+                        if (fallback) fallback.style.display = 'flex';
+                      }}
+                    />
+                    {/* Fallback Icon Diagram */}
+                    <div className="absolute inset-0 hidden items-center justify-center">
+                      <div className="absolute inset-8 rounded-full border-4 border-dashed border-primary/30 flex items-center justify-center">
+                        <div className="w-3/4 h-3/4 rounded-full overflow-hidden border-4 border-primary/20 bg-muted/30 flex items-center justify-center">
+                          <div className="text-center p-4">
+                            <div className="w-16 h-16 mx-auto mb-2 bg-primary/20 rounded-full flex items-center justify-center">
+                              <Target className="w-8 h-8 text-primary" />
+                            </div>
+                            <p className="text-xs text-muted-foreground">Ação Bizonal</p>
                           </div>
-                          <p className="text-xs text-muted-foreground">Ação Bizonal</p>
                         </div>
                       </div>
-                    </div>
-                    
-                    {/* Front heat indicator */}
-                    <div className="absolute top-1/2 left-0 -translate-y-1/2 bg-primary text-primary-foreground px-4 py-2 rounded-xl shadow-lg">
-                      <p className="text-xs font-medium">Calor Frontal</p>
-                      <p className="text-sm font-bold">Barriga</p>
-                    </div>
-                    
-                    {/* Back heat indicator */}
-                    <div className="absolute top-1/2 right-0 -translate-y-1/2 bg-trust text-primary-foreground px-4 py-2 rounded-xl shadow-lg">
-                      <p className="text-xs font-medium">Calor Lombar</p>
-                      <p className="text-sm font-bold">Plexo Sacral</p>
-                    </div>
-                    
-                    {/* 360° indicator */}
-                    <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-foreground text-background px-6 py-3 rounded-full shadow-xl">
-                      <p className="font-bold text-sm">Abraço Térmico 360°</p>
+                      
+                      {/* Front heat indicator */}
+                      <div className="absolute top-1/2 left-0 -translate-y-1/2 bg-primary text-primary-foreground px-4 py-2 rounded-xl shadow-lg">
+                        <p className="text-xs font-medium">Calor Frontal</p>
+                        <p className="text-sm font-bold">Barriga</p>
+                      </div>
+                      
+                      {/* Back heat indicator */}
+                      <div className="absolute top-1/2 right-0 -translate-y-1/2 bg-trust text-primary-foreground px-4 py-2 rounded-xl shadow-lg">
+                        <p className="text-xs font-medium">Calor Lombar</p>
+                        <p className="text-sm font-bold">Plexo Sacral</p>
+                      </div>
+                      
+                      {/* 360° indicator */}
+                      <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-foreground text-background px-6 py-3 rounded-full shadow-xl">
+                        <p className="font-bold text-sm">Abraço Térmico 360°</p>
+                      </div>
                     </div>
                   </div>
                 </div>

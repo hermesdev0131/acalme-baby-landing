@@ -117,6 +117,21 @@ const ComparisonSection = () => {
             </p>
           </div>
 
+          {/* Visual Comparison Image - AI Generated */}
+          <div className="mb-12">
+            <div className="bg-card rounded-3xl p-6 border border-border shadow-lg">
+              <img
+                src="/img/comparison-visual.jpg"
+                alt="Comparativo visual: dispositivo tradicional vs Neuro Dual Tech"
+                className="w-full h-auto rounded-2xl object-contain"
+                onError={(e) => {
+                  // Hide if AI image not available
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+            </div>
+          </div>
+
           {/* Carousel */}
           <div className="relative">
             {/* Navigation Arrows */}

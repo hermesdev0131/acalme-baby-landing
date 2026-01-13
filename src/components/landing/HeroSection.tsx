@@ -4,9 +4,10 @@ import { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const heroImages = [
-    "/img/baby-side.jpg",
-    "/img/baby-with-belt.jpg",
-    "/img/mom-with-belt.jpg"
+    "/img/hero-baby-sleeping-1.jpg", // AI: Calm baby sleeping peacefully, premium lifestyle
+    "/img/hero-baby-sleeping-2.jpg", // AI: Peaceful baby in modern nursery, premium lifestyle
+    "/img/hero-mom-baby-bonding.jpg", // AI: Mother and baby bonding, calm and peaceful
+    "/img/hero-baby-tranquil.jpg" // AI: Baby lying peacefully, premium editorial style
   ];
   
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -108,18 +109,36 @@ const HeroSection = () => {
               {/* Slideshow container */}
               <div className="bg-card rounded-3xl p-4 shadow-2xl border border-border overflow-hidden relative">
                 <div className="relative aspect-[3/4]">
-                  {heroImages.map((image, index) => (
-                    <img
-                      key={index}
-                      src={image}
-                      alt={`Bebê tranquilo com dispositivo Acalme Baby - imagem ${index + 1}`}
-                      className={`absolute inset-0 w-full h-full rounded-2xl object-cover transition-opacity duration-500 ${
-                        index === currentSlide && !isTransitioning
-                          ? 'opacity-100'
-                          : 'opacity-0'
-                      }`}
-                    />
-                  ))}
+                  {heroImages.map((image, index) => {
+                    // Fallback images if AI images not available
+                    const fallbackImages = [
+                      "/img/baby-side.jpg",
+                      "/img/baby-with-belt.jpg",
+                      "/img/mom-with-belt.jpg",
+                      "/img/baby-side.jpg"
+                    ];
+                    
+                    return (
+                      <img
+                        key={index}
+                        src={image}
+                        alt={`Bebê tranquilo com dispositivo Acalme Baby - imagem ${index + 1}`}
+                        className={`absolute inset-0 w-full h-full rounded-2xl object-cover transition-opacity duration-500 ${
+                          index === currentSlide && !isTransitioning
+                            ? 'opacity-100'
+                            : 'opacity-0'
+                        }`}
+                        onError={(e) => {
+                          // Use fallback image if AI image not available
+                          const target = e.currentTarget;
+                          const fallback = fallbackImages[index];
+                          if (!target.src.includes(fallback)) {
+                            target.src = fallback;
+                          }
+                        }}
+                      />
+                    );
+                  })}
                 </div>
                 
                 {/* Navigation arrows */}

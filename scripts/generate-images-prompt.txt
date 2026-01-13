@@ -1,0 +1,49 @@
+# Copy-Paste Ready Prompts for AI Image Generation
+
+## HERO IMAGES (Premium Lifestyle - 4 images needed)
+
+### hero-baby-sleeping-1.jpg
+Calm baby sleeping peacefully, premium lifestyle photography, soft natural lighting, modern minimalist background, editorial style, high-end baby product aesthetic, peaceful and serene atmosphere, professional photography, shallow depth of field, warm tones
+
+### hero-baby-sleeping-2.jpg
+Peaceful baby in modern nursery, premium lifestyle image, clean white background, editorial photography style, calm and tranquil, soft pastel colors, minimalist design, professional baby photography
+
+### hero-mom-baby-bonding.jpg
+Mother and baby bonding moment, premium lifestyle photography, calm and peaceful atmosphere, modern aesthetic, soft lighting, warm and gentle, editorial style, professional photography, emotional connection
+
+### hero-baby-tranquil.jpg
+Baby lying peacefully on soft surface, premium editorial photography, clean modern aesthetic, calm and serene, soft natural light, minimalist background, high-end product photography style
+
+---
+
+## TECHNOLOGY SECTION
+
+### infographic-360-heating.jpg
+Medical illustration of baby showing 360 degree heating zones, front abdominal heat zone highlighted in warm orange color, back lumbar heat zone highlighted in warm yellow color, clean technical diagram style, professional medical illustration, modern and premium design, educational but visually appealing, white background, scientific illustration
+
+---
+
+## REVELATION SECTION
+
+### anatomical-plexo-sacral.jpg
+Medical anatomical illustration of baby's lower back showing sacral plexus location highlighted in blue color, clean medical diagram, professional illustration style, educational but premium, modern design, showing nerve network in lumbar region, white background, scientific medical illustration
+
+---
+
+## COMPARISON SECTION
+
+### comparison-visual.jpg
+Split screen comparison diagram: left side showing baby with only front heating zone highlighted in warm orange color labeled "50% incomplete", right side showing baby with both front and back heating zones highlighted in warm colors labeled "100% complete", clean technical illustration style, modern design, clear visual differentiation, white background
+
+---
+
+## TRADITIONAL HEATING SECTION
+
+### limitation-front-only.jpg
+Simple diagram showing baby with only front abdominal heating zone highlighted in warm orange color, incomplete heating visualization, clean technical illustration, showing limitation with X mark on back, modern design, white background, educational diagram
+
+---
+
+## NEGATIVE PROMPTS (Add these if your AI tool supports them)
+
+Avoid: cartoon, childish, bright colors, cluttered, busy background, low quality, amateur photography

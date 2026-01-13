@@ -31,8 +31,24 @@ const RevelationSection = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
             {/* Plexo Sacral Card */}
             <div className="bg-card rounded-3xl p-8 border border-primary/20 shadow-xl">
-              <div className="w-14 h-14 bg-trust-light rounded-2xl flex items-center justify-center mb-6">
-                <Brain className="w-7 h-7 text-trust" />
+              {/* AI Generated Plexo Sacral Anatomical Graphic */}
+              <div className="mb-6 rounded-2xl overflow-hidden bg-muted/30">
+                <img
+                  src="/img/anatomical-plexo-sacral.jpg"
+                  alt="Ilustração anatômica mostrando a localização do Plexo Sacral"
+                  className="w-full h-auto object-contain"
+                  onError={(e) => {
+                    // Fallback to icon if AI image not available
+                    const target = e.currentTarget;
+                    target.style.display = 'none';
+                    const fallback = target.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
+                {/* Fallback Icon */}
+                <div className="w-14 h-14 bg-trust-light rounded-2xl hidden items-center justify-center mx-auto my-4">
+                  <Brain className="w-7 h-7 text-trust" />
+                </div>
               </div>
               
               <h3 className="text-2xl font-semibold text-foreground mb-4">
