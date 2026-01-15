@@ -5,9 +5,10 @@ import { useState, useEffect } from "react";
 const HeroSection = () => {
   const heroImages = [
     "/img/hero-baby-sleeping-1.jpg", // AI: Calm baby sleeping peacefully, premium lifestyle
+    "/img/hero-baby-tranquil.jpg", // AI: Baby lying peacefully, premium editorial style
     "/img/hero-baby-sleeping-2.jpg", // AI: Peaceful baby in modern nursery, premium lifestyle
     "/img/hero-mom-baby-bonding.jpg", // AI: Mother and baby bonding, calm and peaceful
-    "/img/hero-baby-tranquil.jpg" // AI: Baby lying peacefully, premium editorial style
+    
   ];
   
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -46,11 +47,11 @@ const HeroSection = () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
         >
-          <div className="bg-background/80 backdrop-blur-sm rounded-lg p-2 shadow-lg">
+          <div className="bg-background/80 backdrop-blur-sm rounded-lg p-4 md:p-5 shadow-lg">
             <img 
-              src="/img/logo-main.png" 
+              src="/img/logo-main.jpg" 
               alt="Acalme Baby" 
-              className="h-10 md:h-12 lg:h-14 w-auto"
+              className="h-20 md:h-24 lg:h-28 xl:h-32 w-auto"
             />
           </div>
         </a>
@@ -60,7 +61,7 @@ const HeroSection = () => {
       <div className="absolute top-20 right-10 w-64 h-64 bg-trust-light/50 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
       
-      <div className="container mx-auto px-4 py-20 lg:py-28 pt-24 md:pt-28">
+      <div className="container mx-auto px-4 py-20 lg:py-28 pt-32 md:pt-36 lg:pt-40">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
@@ -83,8 +84,13 @@ const HeroSection = () => {
             </p>
             
             {/* Explicação clara - sem termos confusos */}
-            <p className="text-lg text-sage mb-10 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <p className="text-lg text-sage mb-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
               Descubra por que o verdadeiro alívio vem das costas, e não só da barriga
+            </p>
+            
+            {/* Destaque - Ensina a fazer cocô */}
+            <p className="text-lg font-semibold text-foreground mb-10 animate-fade-in" style={{ animationDelay: '0.35s' }}>
+              Nossa tecnologia direto no plexo sacral ensina o seu bebê a fazer cocô
             </p>
             
             {/* Reforços emocionais */}
@@ -212,8 +218,9 @@ const HeroSection = () => {
               
               {/* Floating result badge */}
               <div className="absolute bottom-8 right-4 bg-foreground text-background px-5 py-3 rounded-2xl shadow-xl">
-                <p className="text-xs text-background/70 mb-0.5">Resultado</p>
-                <p className="font-semibold text-sm">Bebê Tranquilo</p>
+                <p className="text-xs text-background/70 mb-0.5">Kit Completo</p>
+                <p className="font-semibold text-sm">Calor + Frio</p>
+                <p className="text-xs text-background/60 mt-0.5">Cólicas e Vacinas</p>
               </div>
               
               {/* Top badge */}

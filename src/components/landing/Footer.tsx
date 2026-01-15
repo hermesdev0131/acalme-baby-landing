@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
             <img 
-              src="/img/logo-main.png" 
+              src="/img/logo-main.jpg" 
               alt="Acalme Baby" 
               className="h-8 w-auto"
             />
