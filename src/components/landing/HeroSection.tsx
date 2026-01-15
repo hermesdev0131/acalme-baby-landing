@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const heroImages = [
-    "/img/hero-baby-sleeping-1.jpg", // AI: Calm baby sleeping peacefully, premium lifestyle
     "/img/hero-baby-tranquil.jpg", // AI: Baby lying peacefully, premium editorial style
+    "/img/hero-baby-sleeping-1.jpg", // AI: Calm baby sleeping peacefully, premium lifestyle
     "/img/hero-baby-sleeping-2.jpg", // AI: Peaceful baby in modern nursery, premium lifestyle
     "/img/hero-mom-baby-bonding.jpg", // AI: Mother and baby bonding, calm and peaceful
     
