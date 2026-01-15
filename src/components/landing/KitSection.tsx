@@ -61,19 +61,27 @@ const KitSection = () => {
                 </div>
                 <div className="bg-card rounded-2xl p-3 shadow-lg border border-border col-span-1">
                   <img 
+                    src="/img/seed-pouch.jpg" 
+                    alt="Bolsa de Ervas" 
+                    className="w-full rounded-xl object-cover aspect-square"
+                  />
+                  <p className="text-xs text-center text-muted-foreground mt-2">Bolsa de Ervas</p>
+                </div>
+                <div className="bg-card rounded-2xl p-3 shadow-lg border border-border col-span-1">
+                  <img 
                     src="/img/gel-compress.jpg" 
                     alt="Compressa em Gel Pós-Vacina" 
                     className="w-full rounded-xl object-cover aspect-square"
                   />
                   <p className="text-xs text-center text-muted-foreground mt-2">Compressa em Gel</p>
                 </div>
-                <div className="bg-trust-light rounded-2xl p-4 flex items-center justify-center col-span-1">
+                {/* <div className="bg-trust-light rounded-2xl p-4 flex items-center justify-center col-span-1">
                   <div className="text-center">
                     <Snowflake className="w-10 h-10 text-primary mx-auto mb-2" />
                     <p className="text-sm font-semibold text-primary">Uso Frio</p>
                     <p className="text-xs text-muted-foreground">Pós-Vacina</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             

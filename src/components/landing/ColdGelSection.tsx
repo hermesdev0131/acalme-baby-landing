@@ -69,7 +69,7 @@ const ColdGelSection = () => {
             <div className="relative">
               <div className="bg-card rounded-3xl p-6 shadow-2xl border border-border">
                 <img 
-                  src="/img/gel-compress.jpg" 
+                  src="/img/gel-image.jpg" 
                   alt="Compressa em gel termoativa para uso pós-vacina" 
                   className="w-full rounded-2xl object-cover aspect-square"
                 />

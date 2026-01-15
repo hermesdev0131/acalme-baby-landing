@@ -5,8 +5,12 @@ import TraditionalHeatingSection from "@/components/landing/TraditionalHeatingSe
 import RevelationSection from "@/components/landing/RevelationSection";
 import ComparisonSection from "@/components/landing/ComparisonSection";
 import AuthoritySection from "@/components/landing/AuthoritySection";
+import SafetyDisclaimerSection from "@/components/landing/SafetyDisclaimerSection";
 import KitSection from "@/components/landing/KitSection";
+import AromatherapySection from "@/components/landing/AromatherapySection";
 import ColdGelSection from "@/components/landing/ColdGelSection";
+import HowItWorksSection from "@/components/landing/HowItWorksSection";
+import VideoSection from "@/components/landing/VideoSection";
 import FAQSection from "@/components/landing/FAQSection";
 import AboutSection from "@/components/landing/AboutSection";
 import CTASection from "@/components/landing/CTASection";
@@ -14,7 +18,7 @@ import Footer from "@/components/landing/Footer";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main id="top" className="min-h-screen scroll-smooth">
       {/* 1. Banner Principal – A Promessa (outcome first, calm baby) */}
       <HeroSection />
       
@@ -36,19 +40,31 @@ const Index = () => {
       {/* 7. Autoridade Científica (Gate Control, Plexo Sacral, Patent) */}
       <AuthoritySection />
       
-      {/* 8. Sistema Híbrido – Kit Completo (hot for colic, cold for vaccine) */}
+      {/* 8. Safety & Legal Disclaimer (MANDATORY) */}
+      <SafetyDisclaimerSection />
+      
+      {/* 9. Sistema Híbrido – Kit Completo (hot for colic, cold for vaccine) */}
       <KitSection />
       
-      {/* 9. Seção exclusiva da compressa fria (pós-vacina) */}
+      {/* 10. Aromaterapia – Ervas Calmantes */}
+      <AromatherapySection />
+      
+      {/* 11. Seção exclusiva da compressa fria (pós-vacina) */}
       <ColdGelSection />
       
-      {/* 10. FAQ – Perguntas e Respostas */}
+      {/* 12. Como Funciona – Estrutura do Dispositivo (Visual) */}
+      <HowItWorksSection />
+      
+      {/* 13. Vídeo Demonstrativo (20-30s) */}
+      <VideoSection />
+      
+      {/* 14. FAQ – Perguntas e Respostas */}
       <FAQSection />
       
-      {/* 11. Quem Somos */}
+      {/* 15. Quem Somos */}
       <AboutSection />
       
-      {/* 12. Fechamento de Alto Impacto – CTA Final */}
+      {/* 16. Fechamento de Alto Impacto – CTA Final */}
       <CTASection />
       
       <Footer />

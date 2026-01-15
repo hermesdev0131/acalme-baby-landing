@@ -35,10 +35,10 @@ const CTASection = () => {
                 </div>
                 <p className="text-primary text-sm mb-2 font-medium mt-2">Acalme Baby</p>
                 <p className="text-foreground font-semibold mb-2">
-                  Destrava o bebê pela lombar
+                  Ajuda o bebê a relaxar pela lombar
                 </p>
                 <p className="text-sm text-foreground/80">
-                  Onde o aquecimento frontal não alcança — ação bizonal 360° que ativa o Plexo Sacral
+                  Onde o aquecimento apenas na barriga não consegue atuar — ação bizonal 360° que ativa o Plexo Sacral
                 </p>
               </div>
             </div>
@@ -52,8 +52,8 @@ const CTASection = () => {
           
           <p className="text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
             Dispositivos comuns movem o conteúdo com sacrifício. 
-            <span className="font-semibold text-foreground"> Acalme destrava pela lombar</span>, 
-            onde o calor frontal não alcança.
+            <span className="font-semibold text-foreground"> Acalme ajuda pela lombar</span>, 
+            onde o aquecimento apenas na barriga não consegue atuar.
           </p>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
             A tecnologia que faltava para noites tranquilas e um bebê confortável.

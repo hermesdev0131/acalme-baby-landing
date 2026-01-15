@@ -35,11 +35,32 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-background">
+      {/* Logo - Top Left (Hero Section Only) */}
+      <div className="absolute top-6 left-6 md:top-8 md:left-8 lg:top-10 lg:left-10 z-50">
+        <a 
+          href="#top" 
+          className="inline-block transition-all hover:opacity-80 hover:scale-105"
+          aria-label="Acalme Baby - Voltar ao topo"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
+          <div className="bg-background/80 backdrop-blur-sm rounded-lg p-2 shadow-lg">
+            <img 
+              src="/img/logo-main.png" 
+              alt="Acalme Baby" 
+              className="h-10 md:h-12 lg:h-14 w-auto"
+            />
+          </div>
+        </a>
+      </div>
+
       {/* Subtle decorative elements */}
       <div className="absolute top-20 right-10 w-64 h-64 bg-trust-light/50 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
       
-      <div className="container mx-auto px-4 py-20 lg:py-28">
+      <div className="container mx-auto px-4 py-20 lg:py-28 pt-24 md:pt-28">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
@@ -49,28 +70,28 @@ const HeroSection = () => {
               <span className="text-sm font-semibold tracking-wide">Dispositivo Neuro Dual Tech®</span>
             </div>
             
-            {/* Main headline - Outcome first (promise) */}
+            {/* Main headline - Fala como mãe primeiro */}
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mb-6 leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
               Fim do choro
               <span className="block text-primary">inconsolável</span>
             </h1>
             
-            {/* Subheadline - The cause and discovery */}
+            {/* Subheadline - Causa + benefício claro */}
             <p className="text-xl md:text-2xl text-muted-foreground mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               A tecnologia que atua na
-              <span className="font-semibold text-foreground"> origem da cólica</span>
+              <span className="font-semibold text-foreground"> origem da cólica do bebê</span>
             </p>
             
-            {/* Differentiator - The revelation */}
+            {/* Explicação clara - sem termos confusos */}
             <p className="text-lg text-sage mb-10 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              Descubra por que o alívio vem pelas costas do seu bebê
+              Descubra por que o verdadeiro alívio vem das costas, e não só da barriga
             </p>
             
-            {/* Outcome icons */}
+            {/* Reforços emocionais */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 mb-10 animate-fade-in" style={{ animationDelay: '0.35s' }}>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Moon className="w-5 h-5 text-trust" />
-                <span className="text-sm">Noites tranquilas</span>
+                <span className="text-sm">Noites mais tranquilas</span>
               </div>
               <div className="flex items-center gap-2 text-muted-foreground">
                 <Baby className="w-5 h-5 text-trust" />
@@ -78,27 +99,27 @@ const HeroSection = () => {
               </div>
             </div>
             
-            {/* CTA */}
+            {/* CTA - Mais direto e emocional */}
             <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
               <Button size="lg" className="text-lg px-10 py-6 rounded-full shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all">
                 <Heart className="w-5 h-5 mr-2" />
-                Quero para meu bebê
+                Quero aliviar meu bebê agora
               </Button>
             </div>
             
-            {/* Trust indicators */}
+            {/* Selos de autoridade - Leitura fácil */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <div className="flex items-center gap-2">
                 <Shield className="w-4 h-4 text-trust" />
-                <span>Patente INPI</span>
+                <span>Tecnologia patenteada – INPI</span>
               </div>
               <div className="flex items-center gap-2">
                 <Zap className="w-4 h-4 text-trust" />
-                <span>Tecnologia Exclusiva</span>
+                <span>Tecnologia exclusiva</span>
               </div>
               <div className="flex items-center gap-2">
                 <Star className="w-4 h-4 text-trust fill-trust" />
-                <span>Feito no Brasil</span>
+                <span>Desenvolvido no Brasil</span>
               </div>
             </div>
           </div>

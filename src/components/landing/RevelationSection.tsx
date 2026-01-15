@@ -47,7 +47,7 @@ const RevelationSection = () => {
                 />
                 {/* Fallback Icon */}
                 <div className="w-14 h-14 bg-trust-light rounded-2xl hidden items-center justify-center mx-auto my-4">
-                  <Brain className="w-7 h-7 text-trust" />
+                <Brain className="w-7 h-7 text-trust" />
                 </div>
               </div>
               
@@ -132,10 +132,10 @@ const RevelationSection = () => {
                 💡 A revelação
               </p>
               <p className="text-xl font-semibold">
-                Aquecer a lombar <span className="text-primary-foreground/80">destrava</span> o bebê
+                Aquecer a lombar ajuda o bebê a relaxar
               </p>
               <p className="text-sm text-background/70 mt-2">
-                Onde o aquecimento frontal nunca alcança
+                Onde o aquecimento apenas na barriga não consegue atuar
               </p>
             </div>
           </div>

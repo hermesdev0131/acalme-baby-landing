@@ -5,9 +5,13 @@ const Footer = () => {
     <footer className="py-12 bg-foreground text-background/80">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <img 
+              src="/img/logo-main.png" 
+              alt="Acalme Baby" 
+              className="h-8 w-auto"
+            />
             <Heart className="w-5 h-5 text-primary fill-primary" />
-            <span className="font-display text-xl text-background">Acalme Baby</span>
           </div>
           
           <p className="text-sm mb-6">

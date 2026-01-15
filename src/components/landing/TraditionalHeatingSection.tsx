@@ -39,18 +39,18 @@ const TraditionalHeatingSection = () => {
                   />
                   {/* Fallback Icon Diagram */}
                   <div className="absolute inset-0 hidden items-center justify-center">
-                    {/* Baby silhouette representation */}
-                    <div className="relative">
-                      {/* Body outline */}
-                      <div className="w-32 h-40 bg-muted rounded-full relative">
-                        {/* Front heating only indicator */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-accent/50 rounded-full animate-pulse" />
-                        <Flame className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-accent" />
-                      </div>
-                      
-                      {/* Arrow showing limitation */}
-                      <div className="absolute -right-20 top-1/2 -translate-y-1/2 bg-muted-foreground/10 px-3 py-1.5 rounded-lg">
-                        <span className="text-xs text-muted-foreground">Apenas frente</span>
+                  {/* Baby silhouette representation */}
+                  <div className="relative">
+                    {/* Body outline */}
+                    <div className="w-32 h-40 bg-muted rounded-full relative">
+                      {/* Front heating only indicator */}
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-accent/50 rounded-full animate-pulse" />
+                      <Flame className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 text-accent" />
+                    </div>
+                    
+                    {/* Arrow showing limitation */}
+                    <div className="absolute -right-20 top-1/2 -translate-y-1/2 bg-muted-foreground/10 px-3 py-1.5 rounded-lg">
+                      <span className="text-xs text-muted-foreground">Apenas frente</span>
                       </div>
                     </div>
                   </div>
