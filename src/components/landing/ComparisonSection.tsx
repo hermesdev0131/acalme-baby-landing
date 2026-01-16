@@ -107,20 +107,10 @@ const ComparisonSection = () => {
                 <p className="font-semibold text-foreground text-sm">Categoria</p>
               </div>
               <div className="col-span-12 md:col-span-4">
-                <div className="flex items-center gap-2">
-                  <span className="px-3 py-1 bg-destructive/20 text-destructive text-xs font-bold rounded-full border border-destructive/30">
-                    50%
-                  </span>
-                  <p className="font-semibold text-foreground text-sm">Cinta Abdominal Tradicional</p>
-                </div>
+                <p className="font-semibold text-foreground text-sm">Cinta Abdominal Tradicional</p>
               </div>
               <div className="col-span-12 md:col-span-5">
-                <div className="flex items-center gap-2">
-                  <span className="px-3 py-1 bg-primary text-primary-foreground text-xs font-bold rounded-full shadow-md">
-                    100%
-                  </span>
-                  <p className="font-semibold text-foreground text-sm">Acalme Baby - Neuro Dual Tech®</p>
-                </div>
+                <p className="font-semibold text-foreground text-sm">Acalme Baby - Neuro Dual Tech®</p>
               </div>
             </div>
 

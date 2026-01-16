@@ -1,4 +1,4 @@
-import { Flame, Clock, AlertCircle } from "lucide-react";
+import { Flame, Clock, AlertCircle, Info } from "lucide-react";
 
 const TraditionalHeatingSection = () => {
   return (
@@ -57,8 +57,8 @@ const TraditionalHeatingSection = () => {
                 </div>
                 
                 {/* Label */}
-                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-muted border border-border px-4 py-2 rounded-full">
-                  <span className="text-sm text-muted-foreground">Aquecimento unilateral</span>
+                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-muted border border-border px-3 py-1.5 rounded-full">
+                  <span className="text-xs text-muted-foreground">Aquecimento unilateral</span>
                 </div>
               </div>
 
@@ -105,6 +105,22 @@ const TraditionalHeatingSection = () => {
                       </p>
                     </div>
                   </div>
+
+                  {/* Resultado */}
+                  <div className="flex items-start gap-4 bg-background p-4 rounded-xl border border-border">
+                    <div className="w-10 h-10 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Info className="w-5 h-5 text-muted-foreground" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-foreground mb-1">
+                        <span className="text-muted-foreground">Resultado:</span>{" "}
+                        Move gases, mas não relaxa o esfíncter.
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        É uma solução parcial — não errada, mas incompleta.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -132,19 +148,6 @@ const TraditionalHeatingSection = () => {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* Bottom insight */}
-          <div className="text-center">
-            <div className="inline-block bg-card border border-border rounded-2xl px-8 py-5">
-              <p className="text-foreground">
-                <span className="text-muted-foreground">Resultado:</span>{" "}
-                <span className="font-medium">Move gases, mas não relaxa o esfíncter.</span>
-              </p>
-              <p className="text-sm text-muted-foreground mt-1">
-                É uma solução parcial — não errada, mas incompleta.
-              </p>
             </div>
           </div>
         </div>
