@@ -24,7 +24,29 @@ const faqs = [
   },
   {
     question: "O que vem no kit?",
-    answer: "O kit inclui: Dispositivo Híbrido com aquecimento duplo, Bolsa de Ervas aromáticas, Compressa em Gel para uso frio, e Estojo Premium para armazenamento.",
+    answer: (
+      <div className="space-y-3">
+        <p className="mb-3">O Kit Acalme Baby é um sistema completo que inclui:</p>
+        <ul className="space-y-2 list-none">
+          <li className="flex items-start gap-2">
+            <span className="text-primary mt-1">•</span>
+            <span><strong>Dispositivo Híbrido</strong> com aquecimento duplo (barriga + costas) - Uma cinta dupla</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-primary mt-1">•</span>
+            <span><strong>Bolsa de Ervas aromáticas</strong> - Duas bolsas de semente e ervas (camomila, erva-doce e anis estrelado)</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-primary mt-1">•</span>
+            <span><strong>Compressa em Gel</strong> para uso frio - Suporte para compressa em gel + Dois gel térmico</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-primary mt-1">•</span>
+            <span><strong>Estojo Premium</strong> para armazenamento e transporte - Bolsa de mão para transporte</span>
+          </li>
+        </ul>
+      </div>
+    ),
   },
   {
     question: "Qual o prazo de entrega?",

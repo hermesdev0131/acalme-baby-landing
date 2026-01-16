@@ -20,7 +20,8 @@ const AromatherapySection = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image Side */}
-            <div className="order-2 lg:order-1">
+            <div className="order-2 lg:order-1 space-y-6">
+              {/* Main Image */}
               <div className="bg-card rounded-3xl p-6 border border-border shadow-lg">
                 <img 
                   src="/img/seed-pouch.jpg" 
@@ -38,6 +39,63 @@ const AromatherapySection = () => {
                   <div className="text-center">
                     <Leaf className="w-16 h-16 text-sage mx-auto mb-4" />
                     <p className="text-muted-foreground">Bolsa de Ervas</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Herbs Grid with Images */}
+              <div>
+                <h4 className="font-semibold text-foreground mb-4 text-center lg:text-left">Ervas Selecionadas:</h4>
+                <div className="grid grid-cols-3 gap-4">
+                  {/* Camomila */}
+                  <div className="bg-card rounded-xl p-3 border border-border text-center">
+                    <div className="aspect-square mb-2 rounded-lg overflow-hidden bg-sage-light/20 relative flex items-center justify-center">
+                      <img
+                        src="/img/herb-camomila.jpg"
+                        alt="Camomila"
+                        className="w-full h-full object-cover absolute inset-0"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
+                      <Leaf className="w-8 h-8 text-sage opacity-50" />
+                    </div>
+                    <p className="text-xs font-semibold text-foreground mb-1">Camomila</p>
+                    <p className="text-xs text-muted-foreground">Calmante natural</p>
+                  </div>
+
+                  {/* Erva-doce */}
+                  <div className="bg-card rounded-xl p-3 border border-border text-center">
+                    <div className="aspect-square mb-2 rounded-lg overflow-hidden bg-sage-light/20 relative flex items-center justify-center">
+                      <img
+                        src="/img/herb-erva-doce.jpg"
+                        alt="Erva-doce"
+                        className="w-full h-full object-cover absolute inset-0"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
+                      <Leaf className="w-8 h-8 text-sage opacity-50" />
+                    </div>
+                    <p className="text-xs font-semibold text-foreground mb-1">Erva-doce</p>
+                    <p className="text-xs text-muted-foreground">Ajuda a relaxar</p>
+                  </div>
+
+                  {/* Anis Estrelado */}
+                  <div className="bg-card rounded-xl p-3 border border-border text-center">
+                    <div className="aspect-square mb-2 rounded-lg overflow-hidden bg-sage-light/20 relative flex items-center justify-center">
+                      <img
+                        src="/img/herb-anis-estrelado.jpg"
+                        alt="Anis Estrelado"
+                        className="w-full h-full object-cover absolute inset-0"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
+                      <Leaf className="w-8 h-8 text-sage opacity-50" />
+                    </div>
+                    <p className="text-xs font-semibold text-foreground mb-1">Anis Estrelado</p>
+                    <p className="text-xs text-muted-foreground">Aroma suave</p>
                   </div>
                 </div>
               </div>
@@ -60,9 +118,14 @@ const AromatherapySection = () => {
                     <Leaf className="w-6 h-6 text-sage" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2">Ervas Naturais</h4>
+                    <h4 className="font-semibold text-foreground mb-2">Benefícios das Ervas</h4>
+                    <p className="text-sm text-muted-foreground mb-2">
+                      A bolsa contém <span className="font-semibold text-foreground">camomila, erva-doce e anis estrelado</span> — 
+                      ervas tradicionalmente conhecidas por suas propriedades calmantes e relaxantes.
+                    </p>
                     <p className="text-sm text-muted-foreground">
-                      Seleção de ervas tradicionalmente conhecidas por suas propriedades calmantes e relaxantes, escolhidas especialmente para o ambiente do bebê.
+                      Quando aquecidas, liberam um aroma suave que ajuda a acalmar o bebê e criar um ambiente mais tranquilo, 
+                      complementando o efeito térmico do dispositivo.
                     </p>
                   </div>
                 </div>

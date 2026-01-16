@@ -2,10 +2,10 @@ import { Snowflake, Syringe, ThermometerSnowflake, Shield, Check } from "lucide-
 
 const ColdGelSection = () => {
   const benefits = [
-    "Reduz inflamação local",
-    "Alivia dor da picada",
-    "Acalma irritabilidade",
-    "Seguro para recém-nascidos"
+    "Não molha o bebê",
+    "Temperatura ideal (não é tão frio como gelo)",
+    "A mãe não precisa segurar",
+    "Desinflama e tira a dor"
   ];
 
   return (
@@ -53,7 +53,7 @@ const ColdGelSection = () => {
                     <ThermometerSnowflake className="w-5 h-5 text-trust" />
                     <span className="font-semibold text-foreground text-sm">Uso Frio</span>
                   </div>
-                  <p className="text-xs text-muted-foreground">Resfrie na geladeira por 30 min</p>
+                  <p className="text-xs text-muted-foreground">Até 2 horas no freezer</p>
                 </div>
                 <div className="bg-card rounded-xl p-4 border border-border">
                   <div className="flex items-center gap-3 mb-2">

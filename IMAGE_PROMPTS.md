@@ -236,7 +236,63 @@ Professional product photography of a soft gel compress for babies, clean white 
 
 ---
 
-## 🌿 **AROMATHERAPY SECTION** - Lifestyle Image
+## 🌿 **AROMATHERAPY SECTION** - Herbs Images
+
+### Image: `herb-camomila.jpg`
+**Purpose:** Show chamomile herb for aromatherapy section
+**Aspect Ratio:** Square (1:1)
+**Style:** Natural, botanical, calming
+
+**Prompt:**
+```
+Beautiful close-up photograph of fresh chamomile flowers and leaves, natural botanical photography, soft natural lighting from side, warm golden tones, chamomile flowers appear delicate and calming, clean white or light neutral background, professional botanical photography style, shallow depth of field focusing on the flowers, natural and organic feel, premium product photography, warm and inviting atmosphere
+```
+
+**Technical Notes:**
+- Show fresh chamomile flowers (white petals with yellow center)
+- Natural, organic appearance
+- Soft, warm lighting
+- Square format for grid display
+
+---
+
+### Image: `herb-erva-doce.jpg`
+**Purpose:** Show fennel (erva-doce) herb for aromatherapy section
+**Aspect Ratio:** Square (1:1)
+**Style:** Natural, botanical, calming
+
+**Prompt:**
+```
+Beautiful close-up photograph of fresh fennel seeds and leaves (erva-doce), natural botanical photography, soft natural lighting from side, warm green and beige tones, fennel seeds appear aromatic and natural, clean white or light neutral background, professional botanical photography style, shallow depth of field focusing on the seeds and leaves, natural and organic feel, premium product photography, warm and inviting atmosphere
+```
+
+**Technical Notes:**
+- Show fennel seeds (small, oval, greenish-beige)
+- Can include fennel leaves for context
+- Natural, organic appearance
+- Soft, warm lighting
+- Square format for grid display
+
+---
+
+### Image: `herb-anis-estrelado.jpg`
+**Purpose:** Show star anise (anis estrelado) for aromatherapy section
+**Aspect Ratio:** Square (1:1)
+**Style:** Natural, botanical, calming
+
+**Prompt:**
+```
+Beautiful close-up photograph of star anise (anis estrelado), natural botanical photography, showing the distinctive star-shaped pods, soft natural lighting from side, warm brown and amber tones, star anise appears aromatic and natural, clean white or light neutral background, professional botanical photography style, shallow depth of field focusing on the star-shaped pods, natural and organic feel, premium product photography, warm and inviting atmosphere
+```
+
+**Technical Notes:**
+- Show star anise pods (distinctive star shape, brown color)
+- Natural, organic appearance
+- Soft, warm lighting
+- Square format for grid display
+- Can show multiple stars for visual interest
+
+---
 
 ### Image: `kit-bags.jpg` (Reused from Kit Section)
 **Purpose:** Show herb bags for aromatherapy
@@ -357,16 +413,18 @@ Video thumbnail showing a split-screen comparison: left side shows traditional a
 
 - [ ] Hero Section: 4 lifestyle images (hero-baby-sleeping-1.jpg, hero-baby-sleeping-2.jpg, hero-mom-baby-bonding.jpg, hero-baby-tranquil.jpg)
 - [ ] Hero Section: 2 product images (product-belt.jpg, product-belt-double.jpg)
+- [ ] Esfíncter Section: 1 baby in colic pain image (baby-colic-crying.jpg)
 - [ ] Technology Section: 1 infographic (infographic-360-heating.jpg)
 - [ ] Traditional Heating Section: 1 limitation visual (limitation-front-only.jpg)
 - [ ] Revelation Section: 1 anatomical diagram (anatomical-plexo-sacral.jpg)
 - [ ] Kit Section: 2 product images (kit-full.jpg, gel-compress.jpg)
+- [ ] Aromatherapy Section: 3 herb images (herb-camomila.jpg, herb-erva-doce.jpg, herb-anis-estrelado.jpg)
 - [ ] Aromatherapy Section: 1 lifestyle image (kit-bags.jpg - can reuse from Kit)
 - [ ] Cold Gel Section: 1 product image (gel-image.jpg)
 - [ ] How It Works Section: 1 technical image (product-belt-internal.jpg)
 - [ ] Video Section: 1 poster/thumbnail (comparison-visual.jpg)
 
-**Total: 13 unique images** (some may be reused across sections)
+**Total: 17 unique images** (some may be reused across sections)
 
 ---
 
