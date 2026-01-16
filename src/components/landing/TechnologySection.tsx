@@ -14,8 +14,8 @@ const TechnologySection = () => {
     },
     {
       icon: Zap,
-      title: "Gate Control",
-      description: "Bloqueio neural da dor por calor"
+      title: "Bloqueio da Dor",
+      description: "Tecnologia que bloqueia o sinal de dor por calor"
     },
     {
       icon: Shield,
@@ -61,7 +61,7 @@ const TechnologySection = () => {
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 {/* Diagram Side - 360° Infographic */}
                 <div className="relative">
-                  <div className="aspect-square max-w-md mx-auto relative">
+                  <div className="aspect-square max-w-xl lg:max-w-2xl mx-auto relative">
                     {/* AI Generated 360° Heating Infographic */}
                     <img
                       src="/img/infographic-360-heating.jpg"

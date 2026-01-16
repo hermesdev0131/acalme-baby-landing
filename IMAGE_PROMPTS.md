@@ -104,6 +104,27 @@ Same baby heating device from a different angle showing both front and back pouc
 
 ---
 
+## 😢 **ESFÍNCTER SECTION** - Baby in Colic Pain
+
+### Image: `baby-colic-crying.jpg`
+**Purpose:** Show baby crying and contorting from colic pain
+**Aspect Ratio:** 3:4 (portrait)
+**Style:** Emotional, realistic, showing pain
+
+**Prompt:**
+```
+A newborn baby crying intensely and contorting in pain from colic, showing clear signs of discomfort, realistic and emotional photography, natural lighting, the baby's face shows distress and pain, body slightly contorted, premium lifestyle photography style but showing the real problem, professional baby photography, warm but slightly muted tones to convey the seriousness, shot with shallow depth of field, high-end commercial photography style, the image should evoke empathy and understanding of the problem
+```
+
+**Technical Notes:**
+- Baby should be 2-6 months old
+- Show clear signs of colic pain (crying, contorting)
+- Emotional but not overly dramatic
+- Professional photography quality
+- Should make mothers relate to the problem
+
+---
+
 ## 🔬 **TECHNOLOGY SECTION** - Infographic
 
 ### Image: `infographic-360-heating.jpg`

@@ -106,7 +106,7 @@ const VideoSection = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-0.5">•</span>
-                    <span>Representação visual do sinal neural indo para o cérebro (Gate Control Theory)</span>
+                    <span>Representação visual do bloqueio do sinal de dor pelo calor</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary mt-0.5">•</span>

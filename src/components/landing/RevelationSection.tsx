@@ -81,9 +81,12 @@ const RevelationSection = () => {
                 <Zap className="w-7 h-7 text-sage" />
               </div>
               
-              <h3 className="text-2xl font-semibold text-foreground mb-4">
-                Teoria do Portão da Dor
+              <h3 className="text-2xl font-semibold text-foreground mb-2">
+                Tecnologia de Bloqueio da Dor
               </h3>
+              <p className="text-xs text-muted-foreground mb-4 italic">
+                (Baseado na Teoria do Portão da Dor)
+              </p>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Quando aplicamos calor na região lombar, os <span className="font-semibold text-foreground">sinais térmicos bloqueiam</span> a passagem dos sinais de dor:

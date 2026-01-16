@@ -75,8 +75,8 @@ const AuthoritySection = () => {
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-display font-semibold text-background">Teoria do Portão da Dor</h3>
-                  <p className="text-sm text-background/70">Gate Control Theory</p>
+                  <h3 className="text-xl font-display font-semibold text-background">Tecnologia de Bloqueio da Dor</h3>
+                  <p className="text-xs text-background/60 italic">Baseado na Teoria do Portão da Dor</p>
                 </div>
               </div>
               <p className="text-background/80 text-sm leading-relaxed">

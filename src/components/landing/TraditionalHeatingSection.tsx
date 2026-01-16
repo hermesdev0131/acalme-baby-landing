@@ -110,6 +110,31 @@ const TraditionalHeatingSection = () => {
             </div>
           </div>
 
+          {/* Important Warning */}
+          <div className="mb-12">
+            <div className="bg-destructive/5 border-2 border-destructive/20 rounded-2xl p-6 lg:p-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-destructive/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <AlertCircle className="w-6 h-6 text-destructive" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
+                    Por que aquecer só a barriga pode piorar o desconforto?
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed mb-3">
+                    Se o bebê aquece a barriga e a região do <span className="font-semibold text-foreground">Plexo Sacral nas costas não for tratada</span>, pode gerar um desconforto ainda maior. 
+                    O bebê sente a necessidade de evacuar, porém na parte de trás o esfíncter está travado. 
+                    Com isso, o cocô não sai, trazendo mais angústia ainda.
+                  </p>
+                  <p className="text-foreground font-medium leading-relaxed">
+                    Por esse motivo, aquecer só a barriga não é eficaz. Precisa ser um <span className="text-primary">tratamento completo 360°</span> para que o resultado seja gases e cocô eliminados. 
+                    E isso só é possível com a cinta dupla Acalme Baby com a tecnologia Neuro Dual Tech®.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Bottom insight */}
           <div className="text-center">
             <div className="inline-block bg-card border border-border rounded-2xl px-8 py-5">

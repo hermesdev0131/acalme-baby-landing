@@ -16,7 +16,7 @@ const ComparisonSection = () => {
     },
     {
       category: "Atuação na Disquesia",
-      traditional: "Não atua na coordenação do esfíncter",
+      traditional: "Não atua no relaxamento do esfíncter",
       acalme: "Atua no Plexo Sacral, ajudando no relaxamento para evacuação",
       icon: "🧠"
     },
@@ -29,7 +29,7 @@ const ComparisonSection = () => {
     {
       category: "Estímulo Neural",
       traditional: "Estímulo sensorial leve e local",
-      acalme: "Bloqueio do sinal de dor na medula (Teoria do Portão da Dor)",
+      acalme: "Bloqueio do sinal de dor na medula",
       icon: "⚡"
     },
     {
@@ -65,7 +65,7 @@ const ComparisonSection = () => {
     {
       category: "Controle do Estresse",
       traditional: "Não atua no estresse sistêmico",
-      acalme: "Reduz cortisol e ajuda a acalmar o choro",
+      acalme: "Reduz cortisol e diminui o choro",
       icon: "🧘"
     },
     {
