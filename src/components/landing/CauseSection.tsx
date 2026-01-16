@@ -67,7 +67,7 @@ const CauseSection = () => {
           <div className="mt-12 text-center">
             <div className="inline-block bg-card border border-primary/20 rounded-2xl px-8 py-4">
               <p className="text-foreground font-medium">
-                💡 <span className="text-primary">Insight:</span> Aquecer só a barriga não resolve o problema completo
+                💡 <span className="text-primary">Insight:</span> Aquecer a barriga apenas <span className="font-semibold">movimenta</span> gases e cocô, aquecer as costas (plexo sacral) <span className="font-semibold text-primary">expulsa</span> gases e cocô
               </p>
             </div>
           </div>
