@@ -99,60 +99,60 @@ const ComparisonSection = () => {
             </p>
           </div>
 
-          {/* Comparison Table */}
-          <div className="bg-card rounded-3xl border border-border shadow-lg overflow-hidden">
-            {/* Table Header */}
-            <div className="grid grid-cols-12 gap-4 p-6 bg-muted/50 border-b border-border">
-              <div className="col-span-12 md:col-span-3">
-                <p className="font-semibold text-foreground text-sm">Categoria</p>
-              </div>
-              <div className="col-span-12 md:col-span-4">
-                <p className="font-semibold text-foreground text-sm">Cinta Abdominal Tradicional</p>
-              </div>
-              <div className="col-span-12 md:col-span-5">
-                <p className="font-semibold text-foreground text-sm">Acalme Baby - Neuro Dual Tech®</p>
-              </div>
-            </div>
-
-            {/* Table Body */}
-            <div className="divide-y divide-border">
-              {comparisonData.map((item, index) => (
-                <div 
-                  key={index}
-                  className="grid grid-cols-12 gap-4 p-6 hover:bg-muted/20 transition-colors"
-                >
-                  {/* Category */}
-                  <div className="col-span-12 md:col-span-3">
-                    <div className="flex items-start gap-2">
-                      <span className="text-lg mt-0.5">{item.icon}</span>
-                      <p className="font-medium text-foreground text-sm leading-relaxed">
-                        {item.category}
-                      </p>
-                    </div>
+          {/* Comparison - Mobile: Cards, Desktop: Table */}
+          <div className="space-y-4">
+            {comparisonData.map((item, index) => (
+              <div 
+                key={index}
+                className="bg-card rounded-2xl border border-border shadow-sm overflow-hidden hover:shadow-md transition-shadow"
+              >
+                {/* Category Header */}
+                <div className="bg-muted/50 px-4 py-3 border-b border-border">
+                  <div className="flex items-center gap-2">
+                    <span className="text-lg">{item.icon}</span>
+                    <p className="font-semibold text-foreground text-sm">
+                      {item.category}
+                    </p>
                   </div>
+                </div>
 
+                {/* Comparison Content */}
+                <div className="p-4 space-y-4">
                   {/* Traditional */}
-                  <div className="col-span-12 md:col-span-4">
-                    <div className="flex items-start gap-2">
-                      <X className="w-4 h-4 text-destructive flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-destructive/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <X className="w-4 h-4 text-destructive" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-xs font-semibold text-muted-foreground mb-1 uppercase tracking-wide">
+                        Cinta Tradicional
+                      </p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
                         {item.traditional}
                       </p>
                     </div>
                   </div>
 
+                  {/* Divider */}
+                  <div className="h-px bg-border"></div>
+
                   {/* Acalme */}
-                  <div className="col-span-12 md:col-span-5">
-                    <div className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <Check className="w-4 h-4 text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-xs font-semibold text-primary mb-1 uppercase tracking-wide">
+                        Acalme Baby
+                      </p>
                       <p className="text-sm text-foreground font-medium leading-relaxed">
                         {item.acalme}
                       </p>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
           {/* Bottom Summary */}
