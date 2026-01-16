@@ -20,28 +20,79 @@ const ColdGelSection = () => {
             </span>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Content */}
-            <div>
-              <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mb-6">
-                Compressa Termoativa
-                <span className="block text-primary mt-2">Alívio Pós-Vacina</span>
-              </h2>
-              
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                As primeiras vacinas do bebê causam dor e inflamação localizada. 
-                A compressa em gel termoativo proporciona <span className="font-semibold text-foreground">crioterapia segura</span>, 
-                reduzindo o desconforto de forma natural e gentil.
-              </p>
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mb-4">
+              Compressa Termoativa
+              <span className="block text-primary mt-2">Alívio Pós-Vacina</span>
+            </h2>
+          </div>
 
-              {/* Benefits */}
-              <div className="grid grid-cols-2 gap-4 mb-8">
+          {/* Why vaccines cause pain */}
+          <div className="bg-destructive/5 border border-destructive/20 rounded-xl p-5 mb-8 max-w-4xl mx-auto">
+            <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+              <Syringe className="w-5 h-5 text-destructive" />
+              Por que as vacinas causam dor e inflamação?
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              As vacinas contêm antígenos que estimulam o sistema imunológico do bebê. 
+              Essa resposta natural do organismo causa uma <span className="font-semibold text-foreground">reação inflamatória localizada</span> no local da aplicação, 
+              resultando em vermelhidão, inchaço, calor e dor. É uma resposta normal e esperada, 
+              mas que pode causar desconforto significativo no bebê.
+            </p>
+          </div>
+
+          {/* Solution */}
+          <div className="mb-12 max-w-4xl mx-auto">
+            <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2 text-center justify-center">
+              <Snowflake className="w-5 h-5 text-trust" />
+              A solução: Compressa em Gel Termoativa
+            </h3>
+            <p className="text-lg text-muted-foreground leading-relaxed text-center">
+              A compressa em gel termoativo proporciona <span className="font-semibold text-foreground">crioterapia segura</span>, 
+              reduzindo o desconforto de forma natural e gentil. O frio controlado ajuda a desinflamar 
+              a região e alivia a dor, proporcionando conforto imediato ao bebê.
+            </p>
+          </div>
+
+          {/* Baby using gel images */}
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <div className="bg-card rounded-3xl p-4 shadow-xl border border-border overflow-hidden">
+              <img 
+                src="/img/baby-gel-1.jpg" 
+                alt="Bebê chorando após aplicação de vacina" 
+                className="w-full rounded-2xl object-cover aspect-[4/3]"
+                onError={(e) => {
+                  e.currentTarget.src = "/img/gel-image.jpg";
+                }}
+              />
+              <p className="text-xs text-center text-muted-foreground mt-3">Bebê com desconforto após a vacina</p>
+            </div>
+            <div className="bg-card rounded-3xl p-4 shadow-xl border border-border overflow-hidden">
+              <img 
+                src="/img/baby-gel-2.jpg" 
+                alt="Bebê confortável com compressa de gel" 
+                className="w-full rounded-2xl object-cover aspect-[4/3]"
+                onError={(e) => {
+                  e.currentTarget.src = "/img/gel-image.jpg";
+                }}
+              />
+              <p className="text-xs text-center text-muted-foreground mt-3">Alívio imediato e conforto</p>
+            </div>
+          </div>
+
+          {/* Content Grid */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Benefits */}
+            <div>
+              <h3 className="font-semibold text-foreground mb-4">Benefícios da Compressa em Gel:</h3>
+              <div className="grid grid-cols-1 gap-4 mb-6">
                 {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-trust/10 flex items-center justify-center">
-                      <Check className="w-3 h-3 text-trust" />
+                  <div key={index} className="flex items-center gap-3 bg-card p-4 rounded-xl border border-border">
+                    <div className="w-8 h-8 rounded-full bg-trust/10 flex items-center justify-center flex-shrink-0">
+                      <Check className="w-4 h-4 text-trust" />
                     </div>
-                    <span className="text-sm text-foreground">{benefit}</span>
+                    <span className="text-sm text-foreground font-medium">{benefit}</span>
                   </div>
                 ))}
               </div>
@@ -65,7 +116,7 @@ const ColdGelSection = () => {
               </div>
             </div>
 
-            {/* Image */}
+            {/* Main Product Image */}
             <div className="relative">
               <div className="bg-card rounded-3xl p-6 shadow-2xl border border-border">
                 <img 

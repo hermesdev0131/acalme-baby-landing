@@ -42,7 +42,7 @@ const faqs = [
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary mt-1">•</span>
-            <span><strong>Estojo Premium</strong> para armazenamento e transporte - Bolsa de mão para transporte</span>
+            <span><strong>Mala de mão</strong> para armazenamento e transporte</span>
           </li>
         </ul>
       </div>

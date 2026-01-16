@@ -22,8 +22,8 @@ const kitItems = [
   },
   {
     icon: Package,
-    title: "Estojo Premium",
-    description: "Embalagem térmica para armazenamento e transporte",
+    title: "Mala de mão",
+    description: "Para armazenamento e transporte",
     highlight: false,
   },
 ];
