@@ -1,4 +1,21 @@
-import { X, Check, ArrowRight } from "lucide-react";
+import { 
+  X, 
+  Check, 
+  ArrowRight, 
+  Flame, 
+  Heart, 
+  Brain, 
+  Activity, 
+  Zap, 
+  Wind, 
+  CheckCircle, 
+  Clock, 
+  Baby, 
+  Moon, 
+  Sparkles, 
+  Microscope, 
+  Shield 
+} from "lucide-react";
 
 const ComparisonSection = () => {
   const comparisonData = [
@@ -6,79 +23,79 @@ const ComparisonSection = () => {
       category: "Área de Aquecimento",
       traditional: "Apenas a barriga (frente)",
       acalme: "Barriga + lombar ao mesmo tempo (ação bizonal)",
-      icon: "🔥"
+      icon: Flame
     },
     {
       category: "Tipo de Alívio",
       traditional: "Superficial e momentâneo",
       acalme: "Profundo e completo",
-      icon: "💆"
+      icon: Heart
     },
     {
       category: "Atuação na Disquesia",
       traditional: "Não atua no relaxamento do esfíncter",
       acalme: "Atua no Plexo Sacral, ajudando no relaxamento para evacuação",
-      icon: "🧠"
+      icon: Brain
     },
     {
       category: "Resposta Muscular",
       traditional: "Relaxa apenas a musculatura lisa superficial do abdômen",
       acalme: "Relaxa músculos abdominais e lombares que travam o intestino",
-      icon: "💪"
+      icon: Activity
     },
     {
       category: "Estímulo Neural",
       traditional: "Estímulo sensorial leve e local",
       acalme: "Bloqueio do sinal de dor na medula",
-      icon: "⚡"
+      icon: Zap
     },
     {
       category: "Liberação de Gases",
       traditional: "Parcial",
       acalme: "Completa",
-      icon: "💨"
+      icon: Wind
     },
     {
       category: "Liberação de Fezes (cocô)",
       traditional: "Geralmente não ocorre",
       acalme: "Facilitada pelo relaxamento neural e muscular",
-      icon: "✅"
+      icon: CheckCircle
     },
     {
       category: "Tempo de Alívio",
       traditional: "Mais lento e instável",
       acalme: "Mais rápido e duradouro",
-      icon: "⏱️"
+      icon: Clock
     },
     {
       category: "Efeito Aconchego",
       traditional: "Aquecimento localizado",
       acalme: "Aconchego térmico 360°, similar ao útero",
-      icon: "🤱"
+      icon: Baby
     },
     {
       category: "Impacto no Sono",
       traditional: "O bebê pode acordar quando o calor passa",
       acalme: "Relaxamento profundo que favorece o sono reparador",
-      icon: "😴"
+      icon: Moon
     },
     {
       category: "Controle do Estresse",
       traditional: "Não atua no estresse sistêmico",
       acalme: "Reduz cortisol e diminui o choro",
-      icon: "🧘"
+      icon: Sparkles
     },
     {
       category: "Tecnologia",
       traditional: "Método tradicional",
       acalme: "Tecnologia patenteada Neuro Dual Tech®",
-      icon: "🔬"
+      icon: Microscope
     },
     {
       category: "Segurança",
       traditional: "Conforto limitado",
       acalme: "Estrutura desenvolvida para uso neonatal seguro",
-      icon: "🛡️"
+      icon: Shield
     }
   ];
 
@@ -109,7 +126,9 @@ const ComparisonSection = () => {
                 {/* Category Header */}
                 <div className="bg-muted/50 px-4 py-3 border-b border-border">
                   <div className="flex items-center gap-2">
-                    <span className="text-lg">{item.icon}</span>
+                    <div className="w-5 h-5 text-primary flex items-center justify-center">
+                      <item.icon className="w-5 h-5" />
+                    </div>
                     <p className="font-semibold text-foreground text-sm">
                       {item.category}
                     </p>
