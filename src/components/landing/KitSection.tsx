@@ -46,8 +46,8 @@ const KitSection = () => {
             {/* Images */}
             <div className="order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
-                <div className="bg-card rounded-3xl p-4 shadow-xl border border-border col-span-2 group cursor-pointer">
-                  <img 
+                <div className="bg-card rounded-3xl p-4 shadow-xl border border-border col-span-2 group ">
+                  {/* <img 
                     src="/img/kit-full.jpg" 
                     alt="Kit Acalme Baby completo" 
                     className="w-full rounded-2xl transition-transform duration-300 group-hover:scale-105"
@@ -57,11 +57,16 @@ const KitSection = () => {
                     onMouseLeave={(e) => {
                       e.currentTarget.src = "/img/kit-full.jpg";
                     }}
+                  /> */}
+                   <img 
+                    src="/img/kit-full.jpg" 
+                    alt="Kit Acalme Baby completo" 
+                    className="w-full rounded-2xl"
                   />
                 </div>
                 <div className="bg-card rounded-2xl p-3 shadow-lg border border-border col-span-1">
                   <img 
-                    src="/img/seed-pouch.jpg" 
+                    src="/img/seed pouch.jpg" 
                     alt="Bolsa de Ervas" 
                     className="w-full rounded-xl object-cover aspect-square"
                   />

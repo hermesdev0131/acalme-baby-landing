@@ -332,8 +332,93 @@ Professional product photography of a soft gel compress designed for babies, sho
 
 ## 🔧 **HOW IT WORKS SECTION** - Device Structure
 
-### Image: `product-belt-internal.jpg`
-**Purpose:** Show internal structure of device
+### Image: `how-it-works-device.jpg`
+**Purpose:** Main device image showing double structure
+**Aspect Ratio:** 16:9 or 4:3
+**Style:** Product photography, premium
+
+**Prompt:**
+```
+Professional product photography of a baby heating device showing the double structure (front and back pouches), clean white or light neutral background, natural soft lighting, premium product shot, the device appears thin and non-bulky with double-layer burn protection, professional e-commerce photography style, high resolution, clean composition, showing the device laid flat to display both pouches
+```
+
+**Technical Notes:**
+- Show device with both pouches visible
+- Emphasize thin, non-bulky design
+- Professional product photography
+
+---
+
+### Image: `how-it-works-material.jpg`
+**Purpose:** Show cotton material texture
+**Aspect Ratio:** 16:9
+**Style:** Close-up texture photography
+
+**Prompt:**
+```
+Close-up texture photography of soft cotton fabric, natural soft lighting, warm neutral tones, premium textile photography, showing the soft, breathable quality of the cotton material, clean composition, professional product photography, high resolution, emphasizing the gentle and safe material for babies
+```
+
+**Technical Notes:**
+- Show cotton texture
+- Emphasize softness and breathability
+- Professional textile photography
+
+---
+
+### Image: `how-it-works-cotton-material.jpg`
+**Purpose:** Close-up of cotton material for detail card
+**Aspect Ratio:** Square (1:1)
+**Style:** Close-up texture, detail shot
+
+**Prompt:**
+```
+Close-up detail shot of soft cotton fabric texture, natural soft lighting, warm tones, premium textile photography, showing the breathable and gentle quality of the material, square format, professional product detail photography, high resolution
+```
+
+**Technical Notes:**
+- Square format for card display
+- Show material quality
+- Professional detail photography
+
+---
+
+### Image: `how-it-works-double-pouches.jpg`
+**Purpose:** Show double pouches structure
+**Aspect Ratio:** Square (1:1)
+**Style:** Product detail photography
+
+**Prompt:**
+```
+Product detail photography showing the two pouches of a baby heating device (front and back), clean white or light background, natural soft lighting, premium product photography, clearly showing the double-layer burn protection structure, square format, professional e-commerce style, high resolution
+```
+
+**Technical Notes:**
+- Square format for card display
+- Show both pouches clearly
+- Emphasize double-layer protection
+
+---
+
+### Image: `how-it-works-baby-comfort.jpg`
+**Purpose:** Baby comfortable with device
+**Aspect Ratio:** Square (1:1)
+**Style:** Lifestyle, comfortable baby
+
+**Prompt:**
+```
+A calm baby lying comfortably with a thin heating device, natural soft lighting, warm neutral tones, premium lifestyle photography, baby appears peaceful and comfortable, the device is barely visible showing it's thin and non-bulky, professional baby photography, square format, high resolution
+```
+
+**Technical Notes:**
+- Square format for card display
+- Show baby comfort
+- Device should appear thin and non-intrusive
+
+---
+
+### Image: `product-belt-internal.jpg` (Legacy)
+**Purpose:** Show internal structure of device (fallback)
 **Aspect Ratio:** 16:9 or 4:3
 **Style:** Technical product photography, cutaway or diagram
 
@@ -421,10 +506,10 @@ Video thumbnail showing a split-screen comparison: left side shows traditional a
 - [ ] Aromatherapy Section: 3 herb images (herb-camomila.jpg, herb-erva-doce.jpg, herb-anis-estrelado.jpg)
 - [ ] Aromatherapy Section: 1 lifestyle image (kit-bags.jpg - can reuse from Kit)
 - [ ] Cold Gel Section: 1 product image (gel-image.jpg)
-- [ ] How It Works Section: 1 technical image (product-belt-internal.jpg)
+- [ ] How It Works Section: 5 images (how-it-works-device.jpg, how-it-works-material.jpg, how-it-works-cotton-material.jpg, how-it-works-double-pouches.jpg, how-it-works-baby-comfort.jpg)
 - [ ] Video Section: 1 poster/thumbnail (comparison-visual.jpg)
 
-**Total: 17 unique images** (some may be reused across sections)
+**Total: 21 unique images** (some may be reused across sections)
 
 ---
 

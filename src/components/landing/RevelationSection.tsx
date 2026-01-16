@@ -2,7 +2,7 @@ import { Lightbulb, ArrowDown, Zap, Brain } from "lucide-react";
 
 const RevelationSection = () => {
   return (
-    <section className="py-20 lg:py-28 bg-gradient-to-b from-background to-trust-light/30 relative overflow-hidden">
+    <section id="revelation" className="py-20 lg:py-28 bg-gradient-to-b from-background to-trust-light/30 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-10 right-10 w-80 h-80 bg-trust-light/50 rounded-full blur-3xl" />

@@ -167,8 +167,18 @@ const ComparisonSection = () => {
 
           {/* Bottom Summary */}
           <div className="mt-12 text-center">
-            <div className="inline-flex items-center gap-4 bg-card border border-border rounded-2xl px-8 py-5 shadow-sm">
-              <div className="w-12 h-12 rounded-xl overflow-hidden border border-primary/20 group cursor-pointer">
+            <a 
+              href="#revelation" 
+              className="inline-flex items-center gap-4 bg-card border border-border rounded-2xl px-8 py-5 shadow-sm hover:border-primary/30 hover:shadow-md transition-all cursor-pointer group"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('revelation');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
+            >
+              <div className="w-12 h-12 rounded-xl overflow-hidden border border-primary/20 group-hover:border-primary/40 transition-colors">
                 <img 
                   src="/img/product-belt.jpg" 
                   alt="Dispositivo Acalme Baby" 
@@ -185,8 +195,8 @@ const ComparisonSection = () => {
                 <p className="font-semibold text-foreground">A diferença está nas costas</p>
                 <p className="text-sm text-muted-foreground">Onde o aquecimento apenas na barriga não consegue atuar</p>
               </div>
-              <ArrowRight className="w-5 h-5 text-primary" />
-            </div>
+              <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
         </div>
       </div>

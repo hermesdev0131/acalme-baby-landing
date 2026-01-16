@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <img 
+            {/* <img 
               src="/img/logo-main.jpg" 
               alt="Acalme Baby" 
               className="h-8 w-auto"
-            />
+            /> */}
             <Heart className="w-5 h-5 text-primary fill-primary" />
           </div>
           
@@ -19,7 +19,7 @@ const Footer = () => {
           </p>
           
           <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-background/60">
-            <span>© 2024 Acalme Baby</span>
+            <span>© 2026 Acalme Baby</span>
             <span>•</span>
             <span>Todos os direitos reservados</span>
             <span>•</span>
