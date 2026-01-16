@@ -118,12 +118,37 @@ const TechnologySection = () => {
                       O <span className="font-semibold text-foreground">Plexo Sacral</span> é o centro de comando do sistema digestivo do bebê. 
                       Ao aquecer a região lombar, ativamos diretamente os nervos que controlam o relaxamento do esfíncter.
                     </p>
-                    <div className="bg-muted/30 rounded-xl p-4 border border-border/50">
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">Esfíncter</h4>
-                      <p className="text-xs text-muted-foreground leading-relaxed">
-                        O esfíncter é um músculo circular que controla a abertura do intestino para a evacuação. 
-                        Quando não relaxa adequadamente, o bebê sente dificuldade para fazer cocô, causando desconforto e choro.
-                      </p>
+                  </div>
+
+                  {/* Esfíncter Description */}
+                  <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 bg-trust-light rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Activity className="w-5 h-5 text-trust" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-foreground mb-2 text-base">Esfíncter</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          O esfíncter é um músculo circular que controla a abertura do intestino para a evacuação. 
+                          Quando não relaxa adequadamente, o bebê sente dificuldade para fazer cocô, causando desconforto e choro.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Safety - Forro Duplo */}
+                  <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <Shield className="w-5 h-5 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-foreground mb-2 text-base">Segurança Térmica e Material</h3>
+                        <p className="text-sm text-muted-foreground leading-relaxed">
+                          Possui forro duplo anti queimadura, garantindo que o calor seja distribuído de forma uniforme e segura. 
+                          O dispositivo é feito com material 100% algodão, livre de BPA e hipoalergênico, protegendo a pele sensível do bebê.
+                        </p>
+                      </div>
                     </div>
                   </div>
                   
@@ -137,41 +162,6 @@ const TechnologySection = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Safety and Esfíncter Info - Two Column */}
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mb-16">
-            {/* Esfíncter Description */}
-            <div className="bg-card rounded-2xl p-6 lg:p-8 border border-border shadow-sm">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-trust-light rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Activity className="w-6 h-6 text-trust" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-2">Esfíncter</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    O esfíncter é um músculo circular que controla a abertura do intestino para a evacuação. 
-                    Quando não relaxa adequadamente, o bebê sente dificuldade para fazer cocô, causando desconforto e choro.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Safety - Forro Duplo */}
-            <div className="bg-card rounded-2xl p-6 lg:p-8 border border-border shadow-sm">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Shield className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground mb-2">Segurança Térmica</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Possui forro duplo anti queimadura, garantindo que o calor seja distribuído de forma uniforme e segura, 
-                    protegendo a pele sensível do bebê.
-                  </p>
                 </div>
               </div>
             </div>

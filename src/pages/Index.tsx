@@ -23,6 +23,8 @@ const Index = () => {
       {/* 1. Banner Principal – A Promessa (outcome first, calm baby) */}
       <HeroSection />
       
+      <CauseSection />
+      
       {/* 2. Esfíncter - Entenda o Problema (logo após hero) */}
       <EsfincterSection />
 
@@ -30,7 +32,7 @@ const Index = () => {
       <TechnologySection />
       
       {/* 4. A Causa – Educação (colic and disquesia explained) */}
-      <CauseSection />
+      {/* <CauseSection /> */}
       
       {/* 5. O que o Mercado Já Faz – Aquecimento Abdominal (traditional solution, limited) */}
       <TraditionalHeatingSection />
