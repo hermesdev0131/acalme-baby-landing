@@ -29,17 +29,35 @@ const ColdGelSection = () => {
           </div>
 
           {/* Why vaccines cause pain */}
-          <div className="bg-destructive/5 border border-destructive/20 rounded-xl p-5 mb-8 max-w-4xl mx-auto">
-            <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-              <Syringe className="w-5 h-5 text-destructive" />
-              Por que as vacinas causam dor e inflamação?
-            </h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              As vacinas contêm antígenos que estimulam o sistema imunológico do bebê. 
-              Essa resposta natural do organismo causa uma <span className="font-semibold text-foreground">reação inflamatória localizada</span> no local da aplicação, 
-              resultando em vermelhidão, inchaço, calor e dor. É uma resposta normal e esperada, 
-              mas que pode causar desconforto significativo no bebê.
-            </p>
+          <div className="mb-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6 items-center bg-destructive/5 border border-destructive/20 rounded-xl p-5 md:p-6">
+              {/* Text Content */}
+              <div>
+                <h3 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <Syringe className="w-5 h-5 text-destructive" />
+                  Por que as vacinas causam dor e inflamação?
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  As vacinas contêm antígenos que estimulam o sistema imunológico do bebê. 
+                  Essa resposta natural do organismo causa uma <span className="font-semibold text-foreground">reação inflamatória localizada</span> no local da aplicação, 
+                  resultando em vermelhidão, inchaço, calor e dor. É uma resposta normal e esperada, 
+                  mas que pode causar desconforto significativo no bebê.
+                </p>
+              </div>
+              
+              {/* Baby with gel compress image */}
+              <div className="bg-card rounded-2xl p-3 shadow-lg border border-border overflow-hidden">
+                <img 
+                  src="/img/baby-gel-compress.jpg" 
+                  alt="Bebê usando compressa de gel pós-vacina na perna" 
+                  className="w-full rounded-xl object-cover aspect-[4/3]"
+                  onError={(e) => {
+                    e.currentTarget.src = "/img/baby-gel-2.jpg";
+                  }}
+                />
+                <p className="text-xs text-center text-muted-foreground mt-2">Bebê usando compressa de gel</p>
+              </div>
+            </div>
           </div>
 
           {/* Solution */}

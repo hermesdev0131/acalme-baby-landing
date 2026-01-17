@@ -129,7 +129,7 @@ const RevelationSection = () => {
           </div>
 
           {/* Aha moment */}
-          <div className="text-center">
+          <div className="text-center mb-16">
             <div className="inline-block bg-foreground text-background rounded-2xl px-10 py-6 shadow-xl">
               <p className="text-lg font-medium mb-2">
                 💡 A revelação
@@ -139,6 +139,21 @@ const RevelationSection = () => {
               </p>
               <p className="text-sm text-background/70 mt-2">
                 Onde o aquecimento apenas na barriga não consegue atuar
+              </p>
+            </div>
+          </div>
+
+          {/* Emotional aspect - Womb memory */}
+          <div className="bg-gradient-to-br from-primary/5 to-trust-light/30 rounded-3xl p-8 lg:p-12 border border-primary/20 shadow-lg">
+            <div className="text-center mb-6">
+              <h3 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
+                Aquecimento 360°: Mais que calor, um abraço de proteção
+              </h3>
+            </div>
+            <div className="max-w-3xl mx-auto">
+              <p className="text-lg text-muted-foreground leading-relaxed text-center">
+                O calor que envolve o bebê recria a memória do útero, trazendo calmaria imediata e a certeza de que ele está seguro. 
+                É mais que terapia térmica — é um <span className="font-semibold text-foreground">abraço que acalma, protege e restaura a paz</span>.
               </p>
             </div>
           </div>

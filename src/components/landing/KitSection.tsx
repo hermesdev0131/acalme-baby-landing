@@ -5,18 +5,21 @@ const kitItems = [
     icon: Thermometer,
     title: "Dispositivo Híbrido",
     description: "Aquecimento duplo (barriga + costas) para máximo alívio",
+    detail: "Uma cinta dupla",
     highlight: false,
   },
   {
     icon: Leaf,
     title: "Bolsa de Ervas",
     description: "Aromaterapia natural com ervas calmantes selecionadas",
+    detail: "Duas bolsas de semente e ervas",
     highlight: false,
   },
   {
     icon: Snowflake,
     title: "Compressa em Gel",
     description: "Uso frio para alívio pós-vacina e inflamações",
+    detail: "Suporte para compressa em gel + Dois gel térmico",
     highlight: true,
     badge: "Pós-Vacina",
   },
@@ -24,6 +27,7 @@ const kitItems = [
     icon: Package,
     title: "Mala de mão",
     description: "Para armazenamento e transporte",
+    detail: "Bolsa de mão para transporte",
     highlight: false,
   },
 ];
@@ -116,47 +120,17 @@ const KitSection = () => {
                         </span>
                       )}
                     </div>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-sm text-muted-foreground mb-2">{item.description}</p>
+                    {/* Detailed item info */}
+                    <div className="flex items-center gap-2 mt-2 pt-2 border-t border-border/50">
+                      <div className="w-4 h-4 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Check className="w-2.5 h-2.5 text-primary" />
+                      </div>
+                      <span className="text-xs text-muted-foreground">{item.detail}</span>
+                    </div>
                   </div>
                 </div>
               ))}
-
-              {/* Detailed List - Integrated below main items */}
-              <div className="bg-card border border-border rounded-2xl p-6 mt-6">
-                <h4 className="font-semibold text-foreground mb-4 text-sm">Conteúdo Completo do Kit:</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="flex items-center gap-2">
-                    <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3 text-primary" />
-                    </div>
-                    <span className="text-sm text-muted-foreground">Uma cinta dupla</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3 text-primary" />
-                    </div>
-                    <span className="text-sm text-muted-foreground">Duas bolsas de semente e ervas</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3 text-primary" />
-                    </div>
-                    <span className="text-sm text-muted-foreground">Suporte para compressa em gel</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3 text-primary" />
-                    </div>
-                    <span className="text-sm text-muted-foreground">Dois gel térmico</span>
-                  </div>
-                  <div className="flex items-center gap-2 sm:col-span-2">
-                    <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3 text-primary" />
-                    </div>
-                    <span className="text-sm text-muted-foreground">Bolsa de mão para transporte</span>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

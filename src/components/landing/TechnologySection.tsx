@@ -1,4 +1,4 @@
-import { Zap, Target, Shield, Activity, ArrowRight } from "lucide-react";
+import { Zap, Target, Shield, Activity, ArrowRight, Sparkles, Brain, Heart } from "lucide-react";
 
 const TechnologySection = () => {
   const features = [
@@ -146,6 +146,62 @@ const TechnologySection = () => {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Exclusive Benefits - When baby arches body */}
+          <div className="mb-16">
+            <div className="bg-gradient-to-br from-primary/10 to-trust-light/20 rounded-3xl p-8 lg:p-12 border-2 border-primary/20 shadow-xl">
+              <div className="text-center mb-8">
+                <h3 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
+                  Quando o bebê arqueia o corpo de dor
+                </h3>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  A região lombar trava e fica dolorida. Somente a Acalme Baby relaxa essa musculatura, 
+                  trazendo <span className="font-semibold text-foreground">3 benefícios exclusivos</span>:
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+                {/* Benefit 1: Fim da Tensão */}
+                <div className="bg-card rounded-2xl p-6 border border-border shadow-lg hover:border-primary/30 transition-all">
+                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                    <Activity className="w-6 h-6 text-primary" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-3 text-lg">
+                    Fim da Tensão
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Distensiona a coluna e os músculos travados pela crise, permitindo que o bebê relaxe completamente.
+                  </p>
+                </div>
+
+                {/* Benefit 2: Efeito Cérebro */}
+                <div className="bg-card rounded-2xl p-6 border border-border shadow-lg hover:border-primary/30 transition-all">
+                  <div className="w-12 h-12 bg-trust/10 rounded-xl flex items-center justify-center mb-4">
+                    <Brain className="w-6 h-6 text-trust" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-3 text-lg">
+                    Efeito Cérebro
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Aquece a medula, enviando uma mensagem direta de alívio ao sistema nervoso, reduzindo o estresse e a dor.
+                  </p>
+                </div>
+
+                {/* Benefit 3: Plexo Sacral */}
+                <div className="bg-card rounded-2xl p-6 border border-border shadow-lg hover:border-primary/30 transition-all">
+                  <div className="w-12 h-12 bg-sage-light rounded-xl flex items-center justify-center mb-4">
+                    <Heart className="w-6 h-6 text-sage" />
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-3 text-lg">
+                    Plexo Sacral
+                  </h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Relaxa o esfíncter anal, permitindo que o bebê estique o corpo e o cocô saia sem esforço.
+                  </p>
                 </div>
               </div>
             </div>

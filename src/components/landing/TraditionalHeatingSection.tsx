@@ -57,8 +57,8 @@ const TraditionalHeatingSection = () => {
                 </div>
                 
                 {/* Label */}
-                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-muted border border-border px-3 py-1.5 rounded-full">
-                  <span className="text-xs text-muted-foreground">Aquecimento unilateral</span>
+                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-muted border border-border px-2 py-1 md:px-3 md:py-1.5 rounded-full">
+                  <span className="text-[10px] md:text-xs text-muted-foreground">Aquecimento unilateral</span>
                 </div>
               </div>
 
