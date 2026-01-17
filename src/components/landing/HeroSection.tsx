@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const heroImages = [
-    "/img/hero-baby-sleeping-2.jpg", // Baby with relief on back - showing cocô relief benefit
-    "/img/baby-gel-2.jpg", // Baby comfortable after vaccine - showing vaccine relief benefit
     "/img/hero-baby-tranquil.jpg", // Baby lying peacefully, premium editorial style
+    "/img/hero-baby-sleeping-2.jpg", // Baby with relief on back - showing cocô relief benefit
+    "/img/baby-esfincter.jpg", // Baby showing esfíncter relief - technical benefit visualization
     "/img/hero-baby-sleeping-1.jpg", // Calm baby sleeping peacefully, premium lifestyle
+    "/img/baby-gel-2.jpg", // Baby comfortable after vaccine - showing vaccine relief benefit
   ];
   
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -151,16 +152,18 @@ const HeroSection = () => {
                     // Fallback images if AI images not available
                     const fallbackImages = [
                       "/img/baby-side.jpg",
-                      "/img/gel-image.jpg",
-                      "/img/hero-baby-tranquil.jpg",
-                      "/img/hero-baby-sleeping-1.jpg"
+                      "/img/baby-side.jpg",
+                      "/img/baby-side.jpg",
+                      "/img/hero-baby-sleeping-1.jpg",
+                      "/img/gel-image.jpg"
                     ];
                     
                     const altTexts = [
-                      "Bebê com alívio nas costas - alívio para cólicas e intestino",
-                      "Bebê confortável após vacina - alívio da dor pós-vacina",
                       "Bebê tranquilo com dispositivo Acalme Baby",
-                      "Bebê dormindo tranquilamente com alívio completo"
+                      "Bebê com alívio nas costas - alívio para cólicas e intestino",
+                      "Bebê mostrando alívio do esfíncter - benefício técnico de relaxamento",
+                      "Bebê dormindo tranquilamente com alívio completo",
+                      "Bebê confortável após vacina - alívio da dor pós-vacina"
                     ];
                     
                     return (
