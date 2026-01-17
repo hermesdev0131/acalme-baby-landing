@@ -9,9 +9,16 @@ const EsfincterSection = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
+          {/* Badge - Only visible on mobile, outside grid */}
+          <div className="mb-6 lg:hidden">
+            <span className="inline-block px-4 py-1.5 bg-destructive/10 text-destructive text-xs font-semibold tracking-wider uppercase rounded-full">
+              Entenda o Problema
+            </span>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Image Side */}
-            <div className="order-2 lg:order-1">
+            {/* Image Side - Below badge in mobile */}
+            <div className="order-1 lg:order-1 mb-6 lg:mb-0">
               <div className="bg-card rounded-3xl p-4 shadow-2xl border border-border overflow-hidden">
                 <div className="aspect-[3/4] relative">
                   <img
@@ -32,11 +39,14 @@ const EsfincterSection = () => {
             </div>
 
             {/* Content Side */}
-            <div className="order-1 lg:order-2">
+            <div className="order-2 lg:order-2">
               <div className="mb-6">
-                <span className="inline-block px-4 py-1.5 bg-destructive/10 text-destructive text-xs font-semibold tracking-wider uppercase rounded-full mb-4">
-                  Entenda o Problema
-                </span>
+                {/* Badge - Only visible on desktop, inside content */}
+                <div className="hidden lg:block mb-4">
+                  <span className="inline-block px-4 py-1.5 bg-destructive/10 text-destructive text-xs font-semibold tracking-wider uppercase rounded-full">
+                    Entenda o Problema
+                  </span>
+                </div>
                 <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4">
                   O que é o Esfíncter e por que ele é a chave do alívio?
                 </h2>

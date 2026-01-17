@@ -202,7 +202,7 @@ const HeroSection = () => {
               </div>
               
               {/* Product overlay - showing the actual device */}
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 lg:w-40 lg:h-40 rounded-2xl overflow-hidden shadow-2xl border-4 border-background group cursor-pointer">
+              <div className="absolute -bottom-3 -left-3 md:-bottom-4 md:-left-4 lg:-bottom-6 lg:-left-6 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-40 xl:h-40 rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden shadow-xl md:shadow-2xl border-2 md:border-3 lg:border-4 border-background group cursor-pointer z-20">
                 <img 
                   src="/img/product-belt.jpg" 
                   alt="Dispositivo Acalme Baby" 
@@ -216,16 +216,16 @@ const HeroSection = () => {
                 />
               </div>
               
-              {/* Floating result badge */}
-              <div className="absolute bottom-8 right-4 bg-foreground text-background px-5 py-3 rounded-2xl shadow-xl">
-                <p className="text-xs text-background/70 mb-0.5">Kit Completo</p>
-                <p className="font-semibold text-sm">Calor + Frio</p>
-                <p className="text-xs text-background/60 mt-0.5">Cólicas e Vacinas</p>
+              {/* Floating result badge - Top right to avoid covering baby */}
+              <div className="absolute top-2 right-2 md:top-4 md:right-4 bg-foreground/95 backdrop-blur-sm text-background px-2.5 py-1.5 md:px-3 md:py-2 lg:px-4 lg:py-2.5 rounded-lg md:rounded-xl lg:rounded-2xl shadow-xl z-20">
+                <p className="text-[9px] md:text-[10px] lg:text-xs text-background/70 mb-0.5">Kit Completo</p>
+                <p className="font-semibold text-[10px] md:text-xs lg:text-sm">Calor + Frio</p>
+                <p className="text-[9px] md:text-[10px] lg:text-xs text-background/60 mt-0.5">Cólicas e Vacinas</p>
               </div>
               
-              {/* Top badge */}
-              <div className="absolute top-4 -right-2 lg:-right-4 bg-primary text-primary-foreground px-4 py-2 rounded-xl shadow-lg">
-                <p className="font-semibold text-xs">Alívio 360°</p>
+              {/* Top badge - Moved to left side */}
+              <div className="absolute top-4 left-4 md:left-6 lg:left-8 bg-primary text-primary-foreground px-3 py-1.5 md:px-4 md:py-2 rounded-lg md:rounded-xl shadow-lg z-20">
+                <p className="font-semibold text-[10px] md:text-xs">Alívio 360°</p>
               </div>
             </div>
           </div>

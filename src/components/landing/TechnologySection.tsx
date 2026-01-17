@@ -120,22 +120,6 @@ const TechnologySection = () => {
                     </p>
                   </div>
 
-                  {/* Esfíncter Description */}
-                  <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 bg-trust-light rounded-xl flex items-center justify-center flex-shrink-0">
-                        <Activity className="w-5 h-5 text-trust" />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-foreground mb-2 text-base">Esfíncter</h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          O esfíncter é um músculo circular que controla a abertura do intestino para a evacuação. 
-                          Quando não relaxa adequadamente, o bebê sente dificuldade para fazer cocô, causando desconforto e choro.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
                   {/* Safety - Forro Duplo */}
                   <div className="bg-card rounded-2xl p-5 border border-border shadow-sm">
                     <div className="flex items-start gap-4">
