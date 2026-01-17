@@ -1,14 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Shield, Zap, Star, Moon, Baby, ChevronLeft, ChevronRight } from "lucide-react";
+import { Heart, Shield, Zap, Star, Moon, Baby, ChevronLeft, ChevronRight, Thermometer, Snowflake } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const heroImages = [
-    "/img/hero-baby-tranquil.jpg", // AI: Baby lying peacefully, premium editorial style
-    "/img/hero-baby-sleeping-1.jpg", // AI: Calm baby sleeping peacefully, premium lifestyle
-    "/img/hero-baby-sleeping-2.jpg", // AI: Peaceful baby in modern nursery, premium lifestyle
-    "/img/hero-mom-baby-bonding.jpg", // AI: Mother and baby bonding, calm and peaceful
-    
+    "/img/hero-baby-sleeping-2.jpg", // Baby with relief on back - showing cocô relief benefit
+    "/img/baby-gel-2.jpg", // Baby comfortable after vaccine - showing vaccine relief benefit
+    "/img/hero-baby-tranquil.jpg", // Baby lying peacefully, premium editorial style
+    "/img/hero-baby-sleeping-1.jpg", // Calm baby sleeping peacefully, premium lifestyle
   ];
   
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -68,30 +67,42 @@ const HeroSection = () => {
             {/* Tech Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-trust text-primary-foreground rounded-full mb-8 animate-fade-in shadow-lg">
               <Zap className="w-4 h-4" />
-              <span className="text-sm font-semibold tracking-wide">Dispositivo Neuro Dual Tech®</span>
+              <span className="text-sm font-semibold tracking-wide">Kit Completo Neuro Dual Tech®</span>
             </div>
             
-            {/* Main headline - Fala como mãe primeiro */}
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-foreground mb-6 leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              Fim do choro
-              <span className="block text-primary">inconsolável</span>
+            {/* Main headline - Promessa de alívio completo */}
+            <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-6 leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              O único Kit com Tecnologia Neuro Dual Tech® que destrava o intestino e alivia a dor da vacina
             </h1>
             
-            {/* Subheadline - Causa + benefício claro */}
-            <p className="text-xl md:text-2xl text-muted-foreground mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              A tecnologia que atua na
-              <span className="font-semibold text-foreground"> origem da cólica do bebê</span>
-            </p>
-            
-            {/* Explicação clara - sem termos confusos */}
-            <p className="text-lg text-sage mb-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              Descubra por que o verdadeiro alívio vem das costas, e não só da barriga
-            </p>
-            
-            {/* Destaque - Ensina a fazer cocô */}
-            <p className="text-lg font-semibold text-foreground mb-10 animate-fade-in" style={{ animationDelay: '0.35s' }}>
-              Nossa tecnologia direto no plexo sacral ensina o seu bebê a fazer cocô
-            </p>
+            {/* Two Benefits - Clear Division */}
+            <div className="grid sm:grid-cols-2 gap-4 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              {/* Benefit 1: Cólicas/Intestino */}
+              <div className="bg-primary/5 border-2 border-primary/20 rounded-xl p-4 md:p-5">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Thermometer className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground text-lg">Cólicas & Intestino</h3>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Alívio nas costas para o cocô sair. Aquecimento lombar relaxa o esfíncter e destrava o intestino.
+                </p>
+              </div>
+              
+              {/* Benefit 2: Dor de Vacina */}
+              <div className="bg-trust-light/30 border-2 border-trust/20 rounded-xl p-4 md:p-5">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-trust/10 rounded-lg flex items-center justify-center">
+                    <Snowflake className="w-5 h-5 text-trust" />
+                  </div>
+                  <h3 className="font-semibold text-foreground text-lg">Dor de Vacina</h3>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Conforto após a vacina. Compressa em gel termoativa desinflama e tira a dor de forma segura.
+                </p>
+              </div>
+            </div>
             
             {/* Reforços emocionais */}
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 mb-10 animate-fade-in" style={{ animationDelay: '0.35s' }}>
@@ -140,16 +151,23 @@ const HeroSection = () => {
                     // Fallback images if AI images not available
                     const fallbackImages = [
                       "/img/baby-side.jpg",
-                      "/img/baby-with-belt.jpg",
-                      "/img/mom-with-belt.jpg",
-                      "/img/baby-side.jpg"
+                      "/img/gel-image.jpg",
+                      "/img/hero-baby-tranquil.jpg",
+                      "/img/hero-baby-sleeping-1.jpg"
+                    ];
+                    
+                    const altTexts = [
+                      "Bebê com alívio nas costas - alívio para cólicas e intestino",
+                      "Bebê confortável após vacina - alívio da dor pós-vacina",
+                      "Bebê tranquilo com dispositivo Acalme Baby",
+                      "Bebê dormindo tranquilamente com alívio completo"
                     ];
                     
                     return (
                       <img
                         key={index}
                         src={image}
-                        alt={`Bebê tranquilo com dispositivo Acalme Baby - imagem ${index + 1}`}
+                        alt={altTexts[index]}
                         className={`absolute inset-0 w-full h-full rounded-2xl object-cover transition-opacity duration-500 ${
                           index === currentSlide && !isTransitioning
                             ? 'opacity-100'
