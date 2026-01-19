@@ -10,6 +10,7 @@ const HeroSection = () => {
     "/img/esfincter.jpg", // Technical image showing esfíncter anatomy and relaxation
     "/img/hero-baby-sleeping-1.jpg", // Calm baby sleeping peacefully, premium lifestyle
     "/img/baby-gel-2.jpg", // Baby comfortable after vaccine - showing vaccine relief benefit
+    "/img/baby-gel-222.jpg", // Baby with gel compress - additional vaccine relief visualization
   ];
   
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -157,6 +158,7 @@ const HeroSection = () => {
                       "/img/baby-side.jpg",
                       "/img/esfincter-diagram.jpg",
                       "/img/hero-baby-sleeping-1.jpg",
+                      "/img/gel-image.jpg",
                       "/img/gel-image.jpg"
                     ];
                     
@@ -166,7 +168,8 @@ const HeroSection = () => {
                       "Bebê mostrando alívio do esfíncter - benefício técnico de relaxamento",
                       "Imagem técnica do esfíncter - anatomia e relaxamento",
                       "Bebê dormindo tranquilamente com alívio completo",
-                      "Bebê confortável após vacina - alívio da dor pós-vacina"
+                      "Bebê confortável após vacina - alívio da dor pós-vacina",
+                      "Bebê com compressa em gel - alívio da dor pós-vacina"
                     ];
                     
                     return (
