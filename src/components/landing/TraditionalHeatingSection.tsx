@@ -138,9 +138,7 @@ const TraditionalHeatingSection = () => {
                     Por que aquecer só a barriga pode piorar o desconforto?
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-3">
-                    Se o bebê aquece a barriga e a região do <span className="font-semibold text-foreground">Plexo Sacral nas costas não for tratada</span>, pode gerar um desconforto ainda maior. 
-                    O bebê sente a necessidade de evacuar, porém na parte de trás o esfíncter está travado. 
-                    Com isso, o cocô não sai, trazendo mais angústia ainda.
+                    Ao aquecer apenas a barriga e ignorar a região do Plexo Sacral nas costas, o desconforto pode até aumentar. O calor na frente estimula a vontade de evacuar, mas se o esfíncter atrás continuar 'travado' , o cocô não sai. Isso pode gerar ainda mais  pressão e Dor no bebê.
                   </p>
                   <p className="text-foreground font-medium leading-relaxed">
                     Por esse motivo, aquecer só a barriga não é eficaz. Precisa ser um <span className="text-primary">tratamento completo 360°</span> para que o resultado seja gases e cocô eliminados. 

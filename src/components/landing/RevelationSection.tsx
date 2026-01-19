@@ -89,7 +89,7 @@ const RevelationSection = () => {
               </p>
               
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Quando aplicamos calor na região lombar, os <span className="font-semibold text-foreground">sinais térmicos bloqueiam</span> a passagem dos sinais de dor:
+                O calor aplicado na região lombar <span className="font-semibold text-foreground">reduz a sensação de dor</span> do bebê, permitindo que ele relaxe e encontre alívio mais rápido.
               </p>
               
               <div className="bg-sage-light/30 rounded-2xl p-5">
