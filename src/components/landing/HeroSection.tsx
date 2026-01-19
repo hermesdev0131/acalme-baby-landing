@@ -7,6 +7,7 @@ const HeroSection = () => {
     "/img/hero-baby-tranquil.jpg", // Baby lying peacefully, premium editorial style
     "/img/hero-baby-sleeping-2.jpg", // Baby with relief on back - showing cocô relief benefit
     "/img/baby-esfincter.jpg", // Baby showing esfíncter relief - technical benefit visualization
+    "/img/esfincter.jpg", // Technical image showing esfíncter anatomy and relaxation
     "/img/hero-baby-sleeping-1.jpg", // Calm baby sleeping peacefully, premium lifestyle
     "/img/baby-gel-2.jpg", // Baby comfortable after vaccine - showing vaccine relief benefit
   ];
@@ -154,6 +155,7 @@ const HeroSection = () => {
                       "/img/baby-side.jpg",
                       "/img/baby-side.jpg",
                       "/img/baby-side.jpg",
+                      "/img/esfincter-diagram.jpg",
                       "/img/hero-baby-sleeping-1.jpg",
                       "/img/gel-image.jpg"
                     ];
@@ -162,6 +164,7 @@ const HeroSection = () => {
                       "Bebê tranquilo com dispositivo Acalme Baby",
                       "Bebê com alívio nas costas - alívio para cólicas e intestino",
                       "Bebê mostrando alívio do esfíncter - benefício técnico de relaxamento",
+                      "Imagem técnica do esfíncter - anatomia e relaxamento",
                       "Bebê dormindo tranquilamente com alívio completo",
                       "Bebê confortável após vacina - alívio da dor pós-vacina"
                     ];
