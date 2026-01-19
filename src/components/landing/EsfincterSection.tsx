@@ -60,12 +60,10 @@ const EsfincterSection = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-foreground mb-3 text-lg">
-                      O esfíncter anal é a "portinha" que controla a saída do cocô e dos gases
+                      A Chave do Alívio: Plexo Sacral e Esfíncter Anal
                     </h3>
                     <p className="text-muted-foreground leading-relaxed mb-4">
-                      Para o bebê fazer cocô, essa portinha precisa relaxar. Mas na disquesia, por causa da dor, 
-                      o bebê não sabe ainda que precisa relaxar para o cocô sair e <span className="font-semibold text-foreground">trava o esfíncter</span>, 
-                      prendendo o cocô no intestino.
+                      O Bebê muito novinho ainda não sabe coordenar e destravar o Esfíncter Anal que e o musculo "da portinha de saída das fezes". O Plexo Sacral é a região nas costas onde o sistema nervoso comanda o sistema digestivo; quando aquecido, ele envia o estímulo que relaxa esse músculo (esfincter), permitindo que o bebê elimine não só Gases mas também FEZES,sem dor e de forma natural.
                     </p>
                   </div>
                 </div>
