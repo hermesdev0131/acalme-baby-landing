@@ -102,7 +102,7 @@ const HeroSection = () => {
                   <h3 className="font-semibold text-foreground text-lg">Dor de Vacina</h3>
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Conforto após a vacina. Compressa em gel termoativa desinflama e tira a dor de forma segura.
+                  Conforto pós a vacina. Compressa em gel termoativa desinflama e tira a dor de forma segura.
                 </p>
               </div>
             </div>
