@@ -24,7 +24,7 @@ const ComparisonSection = () => {
       traditional: "Apenas a barriga (frente)",
       acalme: "Barriga + lombar ao mesmo tempo (ação bizonal)",
       icon: Flame
-    },
+      },
     {
       category: "Tipo de Alívio",
       traditional: "Superficial e momentâneo",
@@ -42,7 +42,7 @@ const ComparisonSection = () => {
       traditional: "Relaxa apenas a musculatura lisa superficial do abdômen",
       acalme: "Relaxa músculos abdominais e lombares que travam o intestino",
       icon: Activity
-    },
+      },
     {
       category: "Estímulo Neural",
       traditional: "Estímulo sensorial leve e local",
@@ -149,9 +149,9 @@ const ComparisonSection = () => {
                       <p className="text-sm text-muted-foreground leading-relaxed">
                         {item.traditional}
                       </p>
-                    </div>
-                  </div>
-
+              </div>
+                </div>
+                
                   {/* Divider */}
                   <div className="h-px bg-border"></div>
 
@@ -166,12 +166,12 @@ const ComparisonSection = () => {
                       </p>
                       <p className="text-sm text-foreground font-medium leading-relaxed">
                         {item.acalme}
-                      </p>
+                    </p>
                     </div>
                   </div>
                 </div>
               </div>
-            ))}
+              ))}
           </div>
 
           {/* Bottom Summary */}

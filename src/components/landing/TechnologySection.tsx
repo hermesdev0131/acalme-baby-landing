@@ -151,6 +151,98 @@ const TechnologySection = () => {
             </div>
           </div>
 
+          {/* Painel de Controle - Vértebras S2 a S4 */}
+          <div className="mb-16">
+            <div className="bg-card rounded-3xl border border-border p-8 lg:p-12 shadow-lg">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                {/* Image Side */}
+                <div className="order-2 lg:order-1">
+                  <div className="bg-muted/30 rounded-2xl p-4 overflow-hidden">
+                    <img
+                      src="/img/Vertebras.jpg"
+                      alt="Vértebras S2 a S4 - Painel de Controle do Alívio"
+                      className="w-full h-full object-contain rounded-xl"
+                      onError={(e) => {
+                        const target = e.currentTarget;
+                        target.style.display = 'none';
+                        const fallback = target.nextElementSibling as HTMLElement;
+                        if (fallback) fallback.style.display = 'flex';
+                      }}
+                    />
+                    {/* Fallback */}
+                    <div className="hidden items-center justify-center aspect-video bg-muted/50 rounded-xl">
+                      <Activity className="w-16 h-16 text-muted-foreground" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Text Side */}
+                <div className="order-1 lg:order-2 space-y-6">
+                  <div>
+                    <h3 className="text-2xl font-semibold text-foreground mb-4">
+                      O "Painel de Controle" do Alívio (S2 a S4)
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      As Vértebras S2 a S4. É nesta região que o calor do Acalme Baby estimula o Plexo Sacral a enviar o sinal de relaxamento para o esfíncter.
+                    </p>
+                  </div>
+
+                  {/* Como a tecnologia Resolve */}
+                  <div className="space-y-4">
+                    <h4 className="font-semibold text-foreground text-lg mb-4">
+                      Como a tecnologia Resolve:
+                    </h4>
+                    
+                    {/* O Problema */}
+                    <div className="bg-destructive/5 border border-destructive/20 rounded-xl p-4">
+                      <div className="flex items-start gap-3">
+                        <div className="w-8 h-8 bg-destructive/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <span className="text-destructive font-bold">×</span>
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground mb-1">O Problema:</p>
+                          <p className="text-sm text-muted-foreground">
+                            Bebê trava o bumbum por medo da dor prendendo fezes e gases
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* A Solução */}
+                    <div className="bg-primary/5 border border-primary/20 rounded-xl p-4">
+                      <div className="flex items-start gap-3">
+                        <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Zap className="w-5 h-5 text-primary" />
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground mb-1">A Solução:</p>
+                          <p className="text-sm text-muted-foreground">
+                            Estimula o plexo sacral na região das vértebras S2 a S4
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* O Resultado */}
+                    <div className="bg-trust-light/30 border border-trust/20 rounded-xl p-4">
+                      <div className="flex items-start gap-3">
+                        <div className="w-8 h-8 bg-trust/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <Heart className="w-5 h-5 text-trust" />
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground mb-1">O Resultado:</p>
+                          <p className="text-sm text-muted-foreground">
+                            Dá o comando pra o esfíncter relaxar e liberar fezes e gases, "fim da disquesia"
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Exclusive Benefits - When baby arches body */}
           <div className="mb-16">
             <div className="bg-gradient-to-br from-primary/10 to-trust-light/20 rounded-3xl p-8 lg:p-12 border-2 border-primary/20 shadow-xl">

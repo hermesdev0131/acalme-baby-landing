@@ -139,11 +139,11 @@ const TraditionalHeatingSection = () => {
                   </h3>
                   <p className="text-muted-foreground leading-relaxed mb-3">
                     Ao aquecer apenas a barriga e ignorar a região do Plexo Sacral nas costas, o desconforto pode até aumentar. O calor na frente estimula a vontade de evacuar, mas se o esfíncter atrás continuar 'travado' , o cocô não sai. Isso pode gerar ainda mais  pressão e Dor no bebê.
-                  </p>
+              </p>
                   <p className="text-foreground font-medium leading-relaxed">
                     Por esse motivo, aquecer só a barriga não é eficaz. Precisa ser um <span className="text-primary">tratamento completo 360°</span> para que o resultado seja gases e cocô eliminados. 
                     E isso só é possível com a cinta dupla Acalme Baby com a tecnologia Neuro Dual Tech®.
-                  </p>
+              </p>
                 </div>
               </div>
             </div>

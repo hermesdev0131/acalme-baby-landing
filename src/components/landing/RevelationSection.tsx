@@ -1,4 +1,4 @@
-import { Lightbulb, ArrowDown, Zap, Brain } from "lucide-react";
+import { Lightbulb, Zap, Brain } from "lucide-react";
 
 const RevelationSection = () => {
   return (
@@ -92,36 +92,28 @@ const RevelationSection = () => {
                 O calor aplicado na região lombar <span className="font-semibold text-foreground">reduz a sensação de dor</span> do bebê, permitindo que ele relaxe e encontre alívio mais rápido.
               </p>
               
-              <div className="bg-sage-light/30 rounded-2xl p-5">
-                <div className="flex items-center gap-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-2">
-                      <div className="w-3 h-3 rounded-full bg-destructive" />
-                      <span className="text-sm text-foreground">Sinal de dor</span>
-                    </div>
-                    <div className="h-2 bg-destructive/30 rounded-full relative">
-                      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-primary rounded-full flex items-center justify-center">
-                        <span className="text-xs text-primary-foreground font-bold">×</span>
-                      </div>
-                    </div>
+              <div className="bg-sage-light/30 rounded-2xl p-5 space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-destructive/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-destructive font-bold text-lg">×</span>
                   </div>
-                  <ArrowDown className="w-5 h-5 text-muted-foreground rotate-[-90deg]" />
-                  <div className="text-right">
-                    <span className="text-sm font-medium text-primary">Bloqueio</span>
+                  <div>
+                    <p className="font-medium text-foreground mb-1">Sinal de dor</p>
+                    <p className="text-sm text-muted-foreground">
+                      Bloqueado pelo calor na medula
+                    </p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 mt-4">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-2">
-                      <div className="w-3 h-3 rounded-full bg-primary" />
-                      <span className="text-sm text-foreground">Sinal térmico</span>
-                    </div>
-                    <div className="h-2 bg-primary/50 rounded-full" />
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Zap className="w-5 h-5 text-primary" />
                   </div>
-                  <ArrowDown className="w-5 h-5 text-primary rotate-[-90deg]" />
-                  <div className="text-right">
-                    <span className="text-sm font-medium text-primary">Passa</span>
+                  <div>
+                    <p className="font-medium text-foreground mb-1">Sinal térmico</p>
+                    <p className="text-sm text-muted-foreground">
+                      Passa e envia mensagem de alívio ao cérebro
+                    </p>
                   </div>
                 </div>
               </div>

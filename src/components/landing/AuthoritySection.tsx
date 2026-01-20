@@ -53,7 +53,7 @@ const AuthoritySection = () => {
           </div>
 
           {/* Scientific Terms - Prominent */}
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {/* <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 border border-background/20">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
@@ -83,7 +83,7 @@ const AuthoritySection = () => {
                 O calor bloqueia os sinais de dor no nível neural, proporcionando alívio mais rápido e eficaz.
               </p>
             </div>
-          </div>
+          </div> */}
 
           {/* Made in Brazil */}
           <div className="text-center mb-12">

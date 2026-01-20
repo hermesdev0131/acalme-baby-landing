@@ -23,9 +23,9 @@ const ColdGelSection = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-4xl font-medium text-foreground mb-4">
-              Compressa Termoativa
-              <span className="block text-primary mt-2">Alívio Pós-Vacina</span>
-            </h2>
+                Compressa Termoativa
+                <span className="block text-primary mt-2">Alívio Pós-Vacina</span>
+              </h2>
           </div>
 
           {/* Why vaccines cause pain */}
@@ -67,7 +67,7 @@ const ColdGelSection = () => {
               A solução: Compressa em Gel Termoativa
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed text-center">
-              A compressa em gel termoativo proporciona <span className="font-semibold text-foreground">crioterapia segura</span>, 
+                A compressa em gel termoativo proporciona <span className="font-semibold text-foreground">crioterapia segura</span>, 
               reduzindo o desconforto de forma natural e gentil. O frio controlado ajuda a desinflamar 
               a região e alivia a dor, proporcionando conforto imediato ao bebê.
             </p>
@@ -101,7 +101,7 @@ const ColdGelSection = () => {
 
           {/* Content Grid */}
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Benefits */}
+              {/* Benefits */}
             <div>
               <h3 className="font-semibold text-foreground mb-4">Benefícios da Compressa em Gel:</h3>
               <div className="grid grid-cols-1 gap-4 mb-6">

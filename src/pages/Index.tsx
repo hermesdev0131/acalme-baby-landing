@@ -36,28 +36,28 @@ const Index = () => {
       
       {/* 5. O que o Mercado Já Faz – Aquecimento Abdominal (traditional solution, limited) */}
       <TraditionalHeatingSection />
-
+      
       {/* 6. A Grande Revelação – Lombar / Plexo Sacral (discovery moment) */}
       <RevelationSection />
-
+      
       {/* 7. Comparativo Visual (carousel: traditional vs Neuro Dual Tech) */}
       <ComparisonSection />
-
+      
       {/* 8. Autoridade Científica (Gate Control, Plexo Sacral, Patent) */}
       <AuthoritySection />
-
+      
       {/* 9. Safety & Legal Disclaimer (MANDATORY) */}
       <SafetyDisclaimerSection />
 
       {/* 10. Sistema Híbrido – Kit Completo (hot for colic, cold for vaccine) */}
       <KitSection />
-
+      
       {/* 11. Aromaterapia – Ervas Calmantes */}
       <AromatherapySection />
 
       {/* 12. Seção exclusiva da compressa fria (pós-vacina) */}
       <ColdGelSection />
-
+      
       {/* 13. Como Funciona – Estrutura do Dispositivo (Visual) */}
       <HowItWorksSection />
 
@@ -66,10 +66,10 @@ const Index = () => {
 
       {/* 15. FAQ – Perguntas e Respostas */}
       <FAQSection />
-
+      
       {/* 16. Quem Somos */}
       <AboutSection />
-
+      
       {/* 17. Fechamento de Alto Impacto – CTA Final */}
       <CTASection />
       
