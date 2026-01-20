@@ -90,7 +90,14 @@ const AuthoritySection = () => {
             <div className="inline-flex items-center gap-3 text-background/90 bg-background/5 px-6 py-3 rounded-full border border-background/20">
               <MapPin className="w-5 h-5 text-primary" />
               <span className="font-semibold">Desenvolvido e Produzido no Brasil</span>
-              <span className="text-2xl ml-1">🇧🇷</span>
+              <span 
+                className="text-2xl ml-1 inline-block" 
+                role="img" 
+                aria-label="Bandeira do Brasil"
+                style={{ fontFamily: 'Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif' }}
+              >
+                🇧🇷
+              </span>
             </div>
           </div>
 
