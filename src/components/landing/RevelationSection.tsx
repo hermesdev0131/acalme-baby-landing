@@ -30,8 +30,7 @@ const RevelationSection = () => {
           {/* Visual revelation */}
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
             {/* Plexo Sacral Card */}
-            <div className="bg-card rounded-3xl p-8 border border-primary/20 shadow-xl">
-              {/* AI Generated Plexo Sacral Anatomical Graphic */}
+            {/* <div className="bg-card rounded-3xl p-8 border border-primary/20 shadow-xl">
               <div className="mb-6 rounded-2xl overflow-hidden bg-muted/30">
                 <img
                   src="/img/anatomical-plexo-sacral.jpg"
@@ -45,7 +44,7 @@ const RevelationSection = () => {
                     if (fallback) fallback.style.display = 'flex';
                   }}
                 />
-                {/* Fallback Icon */}
+                
                 <div className="w-14 h-14 bg-trust-light rounded-2xl hidden items-center justify-center mx-auto my-4">
                 <Brain className="w-7 h-7 text-trust" />
                 </div>
@@ -73,10 +72,10 @@ const RevelationSection = () => {
                   <span className="text-foreground">Transmite os sinais de dor ao cérebro</span>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Gate Control Card */}
-            <div className="bg-card rounded-3xl p-8 border border-border shadow-lg">
+            {/* <div className="bg-card rounded-3xl p-8 border border-border shadow-lg">
               <div className="w-14 h-14 bg-sage-light rounded-2xl flex items-center justify-center mb-6">
                 <Zap className="w-7 h-7 text-sage" />
               </div>
@@ -117,7 +116,7 @@ const RevelationSection = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Aha moment */}
