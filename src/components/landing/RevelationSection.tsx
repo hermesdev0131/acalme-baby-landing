@@ -136,14 +136,14 @@ const RevelationSection = () => {
 
           {/* Emotional aspect - Womb memory */}
           <div className="bg-gradient-to-br from-primary/5 to-trust-light/30 rounded-3xl p-8 lg:p-12 border border-primary/20 shadow-lg">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-              {/* Image */}
-              <div className="order-2 lg:order-1">
-                <div className="bg-card rounded-2xl p-4 shadow-xl border border-border overflow-hidden">
+            <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+              {/* Image - Reduced size */}
+              <div className="order-2 lg:order-1 lg:col-span-2">
+                <div className="bg-card rounded-2xl p-0 shadow-xl border border-border overflow-hidden">
                   <img 
                     src="/img/hero-baby-sleeping-2.jpg" 
                     alt="Bebê dormindo tranquilamente com dispositivo Acalme Baby" 
-                    className="w-full rounded-xl object-cover aspect-[4/3]"
+                    className="w-full h-auto rounded-xl object-cover"
                     onError={(e) => {
                       e.currentTarget.src = "/img/hero-baby-sleeping-1.jpg";
                     }}
@@ -151,8 +151,8 @@ const RevelationSection = () => {
                 </div>
               </div>
               
-              {/* Text Content */}
-              <div className="order-1 lg:order-2">
+              {/* Text Content - Takes more space */}
+              <div className="order-1 lg:order-2 lg:col-span-3">
                 <div className="text-center lg:text-left mb-6">
                   <h3 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
                     Aquecimento 360°: Mais que calor, um abraço de proteção
