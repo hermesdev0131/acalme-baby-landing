@@ -1,5 +1,37 @@
 import { Shield, Award, MapPin, Truck, CreditCard, Lock, Brain, Zap } from "lucide-react";
 
+// Brazilian Flag SVG Component
+const BrazilFlag = ({ className = "w-6 h-6" }: { className?: string }) => (
+  <svg
+    viewBox="0 0 20 14"
+    className={className}
+    role="img"
+    aria-label="Bandeira do Brasil"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    {/* Green background */}
+    <rect width="20" height="14" fill="#009739" />
+    {/* Yellow diamond */}
+    <path
+      d="M 10 2 L 18 7 L 10 12 L 2 7 Z"
+      fill="#FEDD00"
+    />
+    {/* Blue circle */}
+    <circle cx="10" cy="7" r="3.5" fill="#012169" />
+    {/* White stars - simplified Southern Cross */}
+    <g fill="#FFFFFF">
+      {/* Top star */}
+      <path d="M 10 4.5 L 10.3 5.2 L 11 5.2 L 10.4 5.6 L 10.6 6.3 L 10 5.9 L 9.4 6.3 L 9.6 5.6 L 9 5.2 L 9.7 5.2 Z" />
+      {/* Bottom star */}
+      <path d="M 10 9.5 L 10.3 10.2 L 11 10.2 L 10.4 10.6 L 10.6 11.3 L 10 10.9 L 9.4 11.3 L 9.6 10.6 L 9 10.2 L 9.7 10.2 Z" />
+      {/* Left star */}
+      <path d="M 7.5 7 L 7.8 7.7 L 8.5 7.7 L 7.9 8.1 L 8.1 8.8 L 7.5 8.4 L 6.9 8.8 L 7.1 8.1 L 6.5 7.7 L 7.2 7.7 Z" />
+      {/* Right star */}
+      <path d="M 12.5 7 L 12.8 7.7 L 13.5 7.7 L 12.9 8.1 L 13.1 8.8 L 12.5 8.4 L 11.9 8.8 L 12.1 8.1 L 11.5 7.7 L 12.2 7.7 Z" />
+    </g>
+  </svg>
+);
+
 const AuthoritySection = () => {
   const trustBadges = [
     {
@@ -90,14 +122,7 @@ const AuthoritySection = () => {
             <div className="inline-flex items-center gap-3 text-background/90 bg-background/5 px-6 py-3 rounded-full border border-background/20">
               <MapPin className="w-5 h-5 text-primary" />
               <span className="font-semibold">Desenvolvido e Produzido no Brasil</span>
-              <span 
-                className="text-2xl ml-1 inline-block" 
-                role="img" 
-                aria-label="Bandeira do Brasil"
-                style={{ fontFamily: 'Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif' }}
-              >
-                🇧🇷
-              </span>
+              <BrazilFlag className="w-6 h-4 ml-1" />
             </div>
           </div>
 
