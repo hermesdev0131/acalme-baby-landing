@@ -20,7 +20,7 @@ const AromatherapySection = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image Side */}
-            <div className="order-2 lg:order-1 space-y-6">
+            <div className="order-1 lg:order-1 space-y-6">
               {/* Main Image */}
               <div className="bg-card rounded-3xl p-6 border border-border shadow-lg">
                 <img 
@@ -102,7 +102,7 @@ const AromatherapySection = () => {
             </div>
 
             {/* Content Side */}
-            <div className="order-1 lg:order-2 space-y-6">
+            <div className="order-2 lg:order-2 space-y-6">
               <div>
                 <h3 className="text-2xl font-semibold text-foreground mb-4">
                   Como Funciona a Aromaterapia

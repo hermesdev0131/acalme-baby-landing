@@ -48,7 +48,7 @@ const KitSection = () => {
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Images */}
-            <div className="order-2 lg:order-1">
+            <div className="order-1 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-card rounded-3xl p-4 shadow-xl border border-border col-span-2 group ">
                   {/* <img 
@@ -95,7 +95,7 @@ const KitSection = () => {
             </div>
             
             {/* Items list */}
-            <div className="order-1 lg:order-2 space-y-4">
+            <div className="order-2 lg:order-2 space-y-4">
               {kitItems.map((item, index) => (
                 <div 
                   key={index} 

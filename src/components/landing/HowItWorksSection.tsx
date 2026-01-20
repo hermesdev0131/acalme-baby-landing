@@ -21,7 +21,7 @@ const HowItWorksSection = () => {
           {/* Visual Structure */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Image Side */}
-            <div className="relative order-2 lg:order-1">
+            <div className="relative order-1 lg:order-1">
               <div className="bg-card rounded-3xl p-6 border border-border shadow-xl">
                 <img 
                   src="/img/how-it-works-device.jpg" 
@@ -47,7 +47,7 @@ const HowItWorksSection = () => {
             </div>
 
             {/* Explanation Side */}
-            <div className="space-y-6 order-1 lg:order-2">
+            <div className="space-y-6 order-2 lg:order-2">
               <div>
                 <h3 className="text-2xl font-semibold text-foreground mb-4">
                   Design Seguro e Não Volumoso

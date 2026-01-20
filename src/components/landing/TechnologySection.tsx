@@ -156,7 +156,7 @@ const TechnologySection = () => {
             <div className="bg-card rounded-3xl border border-border p-8 lg:p-12 shadow-lg">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 {/* Image Side */}
-                <div className="order-2 lg:order-1">
+                <div className="order-1 lg:order-1">
                   <div className="bg-muted/30 rounded-2xl p-4 overflow-hidden">
                     <img
                       src="/img/Vertebras.jpg"
@@ -177,7 +177,7 @@ const TechnologySection = () => {
                 </div>
 
                 {/* Text Side */}
-                <div className="order-1 lg:order-2 space-y-6">
+                <div className="order-2 lg:order-2 space-y-6">
                   <div>
                     <h3 className="text-2xl font-semibold text-foreground mb-4">
                       O "Painel de Controle" do Alívio (S2 a S4)
