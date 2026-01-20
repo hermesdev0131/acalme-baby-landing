@@ -52,7 +52,7 @@ const ColdGelSection = () => {
                   alt="Bebê usando compressa de gel pós-vacina na perna" 
                   className="w-full rounded-xl object-cover aspect-[4/3]"
                   onError={(e) => {
-                    e.currentTarget.src = "/img/baby-gel-2.jpg";
+                    e.currentTarget.src = "/img/baby-gel-2-old.jpg";
                   }}
                 />
                 <p className="text-xs text-center text-muted-foreground mt-2">Bebê usando compressa de gel</p>
@@ -88,7 +88,7 @@ const ColdGelSection = () => {
             </div>
             <div className="bg-card rounded-3xl p-4 shadow-xl border border-border overflow-hidden">
               <img 
-                src="/img/baby-gel-2.jpg" 
+                src="/img/baby-gel-2-old.jpg" 
                 alt="Bebê confortável com compressa de gel" 
                 className="w-full rounded-2xl object-cover aspect-[4/3]"
                 onError={(e) => {

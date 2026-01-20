@@ -141,7 +141,7 @@ const RevelationSection = () => {
               <div className="order-2 lg:order-1 lg:col-span-2">
                 <div className="bg-card rounded-2xl p-0 shadow-xl border border-border overflow-hidden">
                   <img 
-                    src="/img/hero-baby-sleeping-2.jpg" 
+                    src="/img/hero-baby-sleeping-2-old.jpg" 
                     alt="Bebê dormindo tranquilamente com dispositivo Acalme Baby" 
                     className="w-full h-auto rounded-xl object-cover"
                     onError={(e) => {
