@@ -152,17 +152,25 @@ const RevelationSection = () => {
               </div>
               
               {/* Text Content - Takes more space */}
-              <div className="order-1 lg:order-2 lg:col-span-3">
-                <div className="text-center lg:text-left mb-6">
-                  <h3 className="font-display text-2xl md:text-3xl font-medium text-foreground mb-4">
-                    Aquecimento 360°: Mais que calor, um abraço de proteção
-                  </h3>
-                </div>
-                <div>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Com o aquecimento 360° da Acalme Baby, o seu bebê sente que está no útero novamente. 
-                    Essa segurança traz a tranquilidade necessária para o alívio da cólica.
-                  </p>
+              <div className="order-1 lg:order-2 lg:col-span-3 flex flex-col justify-center">
+                <div className="text-center lg:text-left space-y-6">
+                  <div>
+                    <h3 className="font-display text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-3 tracking-tight">
+                      Aquecimento 360°:
+                    </h3>
+                    <h4 className="font-display text-2xl md:text-3xl lg:text-4xl font-light text-primary mb-6 tracking-tight">
+                      Mais que calor, um abraço de proteção
+                    </h4>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="w-16 h-0.5 bg-primary/30 mx-auto lg:mx-0"></div>
+                    <p className="text-lg md:text-xl text-muted-foreground leading-relaxed font-light max-w-2xl mx-auto lg:mx-0">
+                      Com o aquecimento 360° da Acalme Baby, o seu bebê sente que está no útero novamente. 
+                      <span className="block mt-3 text-foreground/90">
+                        Essa segurança traz a tranquilidade necessária para o alívio da cólica.
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
